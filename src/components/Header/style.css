@@ -1,0 +1,17 @@
+.header {
+    padding: 10px;
+
+    background-color: #083045;
+}
+
+.logo {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    color: #373c3e;
+    background-color: #eed369;
+
+    font-family: fantasy;
+    font-size: 1.8rem;
+}
