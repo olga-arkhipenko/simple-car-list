@@ -5,7 +5,6 @@ class MainPage extends Component {
     render() {
         return (
             <main>
-                Hello from Main!
                 <Link to="/">
                     <span> Home </span>
                 </Link>
