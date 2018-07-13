@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Table from '../containers/Table'
 
 class MainPage extends Component {
     render() {
         return (
             <main>
-                <Link to="/">
-                    <span> Home </span>
-                </Link>
+                <Table/>
                 <Link to="/form">
-                    <span> From </span>
+                LINK
                 </Link>
             </main>
         )
