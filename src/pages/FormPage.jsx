@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Form from '../containers/Form';
 
 class FormPage extends Component {
@@ -6,6 +7,9 @@ class FormPage extends Component {
         return (
             <main>
                 <Form/>
+                <Link to="/">
+                LINK
+                </Link>
             </main>
         )
     }

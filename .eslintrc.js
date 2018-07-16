@@ -12,6 +12,9 @@ module.exports = {
         'import/no-unresolved': 'off',
         'import/extensions': ['error', 'never', {
             'packages': 'always' 
-        }]
+        }],
+        'no-labels': 'off',
+        'no-unused-expressions': 'off',
+        'no-unused-labels': 'off'
     }
 }
