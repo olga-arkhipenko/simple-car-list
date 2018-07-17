@@ -13,8 +13,10 @@ const Form = () => {
             <FormField name="Engine power" type="number" />
             <FormField name="Price" type="number" />
             <FormField name="Owner" type="text" />
-            <FormButton value="Add" type="submit" style="accept"/>
-            <FormButton value="Cancel" type="reset" style="cancel"/>
+            <div className="form__actions">
+                <FormButton value="Add" type="submit" style="accept" />
+                <FormButton value="Cancel" type="reset" style="cancel" />
+            </div>
         </form>
     )
 };
