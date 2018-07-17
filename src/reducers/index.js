@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
-import cars from './cars';
-import formData from './formData';
+import carsReducer from './carsReducer';
+import formDataReducer from './formDataReducer';
 
 const rootReducer =  combineReducers({
-    cars,
-    formData
+    cars: carsReducer,
+    formData: formDataReducer
 });
 
 export default rootReducer;
