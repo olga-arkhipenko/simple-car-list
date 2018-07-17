@@ -7,10 +7,10 @@ const Table = () => {
     return (
         <table>
             <caption> List of all cars </caption>
-            <thead>
-                <TableHeading/>
+            <TableHeading/>
+            <tbody>
                 <TableRow></TableRow>
-            </thead>
+            </tbody>
         </table>
     )
 };
