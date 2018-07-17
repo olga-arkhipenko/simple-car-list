@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Form from '../containers/Form';
+import Form from '../containers/FormContainer';
 
 class FormPage extends Component {
     render() {

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Table from '../components/Table';
 
 const mapStateToProps = (state) => ({
-    item: state.carsReducer.item
+    item: state.cars.item
 });
 
 class TableContainer extends Component {
