@@ -1,0 +1,15 @@
+.table-heading {
+    border-collapse: collapse;
+
+    color: #093a3e;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7rem;
+}
+
+.table-heading__cell {
+    padding: 10px 25px;
+
+    border: 5px solid #ffffff;
+    background-color: #edf3fd;
+}
