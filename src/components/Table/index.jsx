@@ -5,8 +5,8 @@ import TableRow from '../TableRow';
 
 const Table = () => {
     return (
-        <table>
-            <caption> List of all cars </caption>
+        <table className="table">
+            <caption className="table__caption"> List of all cars </caption>
             <TableHeading/>
             <tbody>
                 <TableRow></TableRow>

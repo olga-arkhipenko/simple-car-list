@@ -3,15 +3,15 @@ import './style.css';
 
 const TableHeading = () => {
     return (
-        <thead>
+        <thead className="table-heading">
             <tr>
-                <th> Marque </th>
-                <th> Model </th>
-                <th> Production year </th>
-                <th> Engine capacity </th>
-                <th> Engine power </th>
-                <th> Price </th>
-                <th> Owner </th>
+                <th className="table-heading__cell"> Marque </th>
+                <th className="table-heading__cell"> Model </th>
+                <th className="table-heading__cell"> Production year </th>
+                <th className="table-heading__cell"> Engine capacity </th>
+                <th className="table-heading__cell"> Engine power </th>
+                <th className="table-heading__cell"> Price </th>
+                <th className="table-heading__cell"> Owner </th>
             </tr>
         </thead>
     )
