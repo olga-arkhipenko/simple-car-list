@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Table from '../components/Table';
+import tableHeadings from '../constants/tableHeadings';
 
 const mapStateToProps = (state) => ({
-    item: state.cars.item
+    cars: state.cars
 });
 
 class TableContainer extends Component {
     render() {
         return (
-            <Table/>
+            <Table data={ this.props.cars } headings={ tableHeadings }/>
         )
     }
 }

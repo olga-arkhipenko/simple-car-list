@@ -1,15 +1,17 @@
 import React from 'react';
 import './style.css';
 import TableHeading from '../TableHeading';
-import TableRow from '../TableRow';
+import CarsRow from '../CarsRow';
 
-const Table = () => {
+const Table = ({ data, headings }) => {
+    const tableBody = data.map(item => <CarsRow key={ item.id } car={ item } />);
+
     return (
         <table className="table">
             <caption className="table__caption"> List of all cars </caption>
-            <TableHeading/>
+            <TableHeading headings={ headings }/>
             <tbody>
-                <TableRow></TableRow>
+                { tableBody }
             </tbody>
         </table>
     )
