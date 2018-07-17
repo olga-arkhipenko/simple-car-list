@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import FormField from '../FormField';
+import FormButton from '../FormButton';
 
 const Form = () => {
     return (
@@ -12,6 +13,8 @@ const Form = () => {
             <FormField name="Engine power" type="number" />
             <FormField name="Price" type="number" />
             <FormField name="Owner" type="text" />
+            <FormButton value="Add" type="submit" style="accept"/>
+            <FormButton value="Cancel" type="reset" style="cancel"/>
         </form>
     )
 };
