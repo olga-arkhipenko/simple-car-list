@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Form from '../components/Form';
 
 const mapStateToProps = (state) => ({
-    item: state.carsReducer.item
+    item: state.cars.item
 });
 
 class TableContainer extends Component {
