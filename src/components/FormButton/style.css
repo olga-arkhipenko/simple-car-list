@@ -1,0 +1,19 @@
+.form-button {
+    padding: 14px 60px;
+
+    cursor: pointer;
+
+    border: none;
+
+    font-size: 1.7rem;
+}
+
+.accept {
+    color: #edf3fd;
+    background-color: #083045;
+}
+
+.cancel {
+    color: #ffffff;
+    background-color: #c42112;
+}
