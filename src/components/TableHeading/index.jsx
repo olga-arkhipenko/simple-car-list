@@ -5,8 +5,8 @@ const TableHeading = ({ headings }) => {
     const headingCells = headings.map((heading, index) => <th key={ index } className="table-heading__cell"> { heading } </th>);
 
     return (
-        <thead className="table-heading">
-            <tr>
+        <thead>
+            <tr className="table-heading">
                 { headingCells }
             </tr>
         </thead>

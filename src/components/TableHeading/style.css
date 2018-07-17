@@ -13,3 +13,12 @@
     border: 5px solid #ffffff;
     background-color: #edf3fd;
 }
+
+.table-heading__cell:first-child {
+    border-left: none;
+}
+
+.table-heading__cell:last-child {
+    border-right: none;
+}
+
