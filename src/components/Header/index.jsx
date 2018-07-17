@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className="header">
             <p className="logo">
-                Car list 
+                Cars list 
             </p>
         </header>
     )
