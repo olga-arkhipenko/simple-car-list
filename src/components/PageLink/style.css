@@ -2,13 +2,17 @@
     text-decoration: none;
 
     color: inherit;
+
     font-family: "Open Sans", sans-serif;
 }
 
 .adding-link {
     display: inline-block;
-    background-color: #083045;
-    color: #edf3fd;
+
     padding: 14px 28px;
-    font-size: 1.4rem;
+
+    color: #edf3fd;
+    background-color: #083045;
+
+    font-size: 1.2rem;
 }

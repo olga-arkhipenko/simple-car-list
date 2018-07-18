@@ -3,11 +3,11 @@
 }
 
 .form-field__name {
-    margin: 20px 0;
+    margin: 18px 0;
 
     color: #083145;
 
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .form-field__input {
@@ -18,7 +18,7 @@
     color: #39596a;
     border: 2px solid #cdd5d9;
 
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .form-field__input::placeholder {
