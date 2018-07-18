@@ -14,7 +14,7 @@ const Form = () => {
             <FormField name="Price" type="number" />
             <FormField name="Owner" type="text" />
             <div className="form__actions">
-                <FormButton value="Add" type="submit" style="accept" />
+                <FormButton value="Submit" type="submit" style="accept" />
                 <FormButton value="Cancel" type="reset" style="cancel" />
             </div>
         </form>
