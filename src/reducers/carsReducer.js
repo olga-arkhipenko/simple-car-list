@@ -2,10 +2,11 @@ const initialState = [];
 
 const carReducer = function (state = initialState, action) {
     switch (action.type) {
-    case 'SIMPLE_ACTION':
-        return {
-            result: action.payload
-        }
+    case 'ADD_CAR':
+        return [
+            ...state,
+            action.payload
+        ]
     default:
         return state
     }

@@ -2,16 +2,21 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Form from '../components/Form';
 
-const mapStateToProps = (state) => ({
-    item: state.cars.item
-});
+const addItem = (payload) => ({
+    type: 'ADD_ITEM',
+    payload
+})
 
-class TableContainer extends Component {
+class FormContainer extends Component {
     render() {
         return (
             <Form/>
         )
     }
-}
+};
 
-export default connect(mapStateToProps) (TableContainer);
+const mapDispatchToProps  = (dispatch) => ({
+    addItem: (data) => dispatch(addItem(data))
+});
+
+export default connect( null, mapDispatchToProps) (FormContainer);
