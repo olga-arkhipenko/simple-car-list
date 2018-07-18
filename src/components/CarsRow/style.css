@@ -1,0 +1,20 @@
+.table-cell {
+    padding: 14px 25px;
+
+    text-align: center;
+
+    color: #093a3e;
+    border: 5px solid #ffffff;
+    background-color: #f6f9fe;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7rem;
+}
+
+.table-cell--first {
+    border-left: none;
+}
+
+.table-cell--last {
+    border-right: none;
+}
