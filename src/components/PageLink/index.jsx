@@ -4,8 +4,8 @@ import './style.css';
 
 const PageLink = ({ path, name, type }) => {
     return (
-        <Link to={ path } className={ `link ${ type }` }>
-            { name }
+        <Link to={ path } className={ `link ${ type || '' }` }>
+            { name || '' }
         </Link>
     )
 };
