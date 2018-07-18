@@ -7,18 +7,18 @@
 
     color: #083145;
 
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 .form-field__input {
     box-sizing: border-box;
     width: 100%;
-    padding: 8px;
+    padding: 5px;
 
     color: #39596a;
-    border: 3px solid #cdd5d9;
+    border: 2px solid #cdd5d9;
 
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 .form-field__input::placeholder {

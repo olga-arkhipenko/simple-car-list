@@ -4,7 +4,7 @@ import TableHeading from '../TableHeading';
 import CarsRow from '../CarsRow';
 
 const Table = ({ data, headings }) => {
-    const tableBody = data.map(item => <CarsRow key={ item.id } car={ item } />);
+    const tableBody = data.map(item => <CarsRow key={ item.owner } car={ item } />);
 
     return (
         <table className="table">
