@@ -8,10 +8,10 @@
 }
 
 .table-heading__cell {
-    padding: 10px 25px;
+    padding: 14px 25px;
 
     border: 5px solid #ffffff;
-    background-color: #edf3fd;
+    background-color: #d0daea;
 }
 
 .table-heading__cell:first-child {
@@ -21,4 +21,3 @@
 .table-heading__cell:last-child {
     border-right: none;
 }
-
