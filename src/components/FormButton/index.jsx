@@ -1,12 +1,13 @@
 import React from 'react';
 import './style.css';
 
-const FormButton = ({ value, type, style }) => {
+const FormButton = ({ value, type, style, onClick }) => {
     return (
         <input
             className={ `form-button ${style}` }
             type={ type }
-            value={ value }/>
+            value={ value }
+            onClick={ onClick }/>
     )
 };
 
