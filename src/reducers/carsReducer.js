@@ -1,11 +1,11 @@
-const initialState = [];
+import actionTypes from '../actions/actionTypes';
 
-const carReducer = (state = initialState, action) => {
+const carReducer = (state = [], action) => {
     switch (action.type) {
-    case 'ADD_CAR':
+    case actionTypes.ADD_CAR:
         return [
             ...state,
-            action.payload
+            action.car
         ]
     default:
         return state

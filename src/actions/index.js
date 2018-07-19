@@ -1,5 +1,7 @@
+import actionTypes from './actionTypes';
+
 const addCar = (car) => ({
-    type: 'ADD_CAR',
+    type: actionTypes.ADD_CAR,
     car
 });
 

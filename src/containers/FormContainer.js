@@ -6,7 +6,7 @@ import addCar from '../actions';
 class FormContainer extends Component {
     render() {
         return (
-            <Form addCar={ this.props.addCar }/>
+            <Form onSubmit={ this.props.addCar }/>
         )
     }
 };
