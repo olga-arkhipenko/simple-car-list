@@ -69,8 +69,8 @@ class Form extends Component {
                 <FormField name="Price" type="number" value={ this.state.price } onChange={ this.handleChangePrice } />
                 <FormField name="Owner" type="text" value={ this.state.owner } onChange={ this.handleChangeOwner } />
                 <div className="form__actions">
-                    <FormButton value="Submit" type="submit" style="accept" onClick={ this.handleSubmit } />
-                    <FormButton value="Cancel" type="reset" style="cancel" onClick={ this.handleCancel }/>
+                    <FormButton value="Submit" type="submit" design="accept" onClick={ this.handleSubmit } />
+                    <FormButton value="Cancel" type="reset" design="cancel" onClick={ this.handleCancel }/>
                 </div>
             </form>
         );
