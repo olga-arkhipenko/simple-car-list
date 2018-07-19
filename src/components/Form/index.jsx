@@ -39,13 +39,17 @@ class Form extends Component {
 
     handleChangeOwner = this.handleChange('owner');
 
-    handleSubmit = () => {
-
-    }
+    handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(this.props.addCar);
+        this.props.addCar(this.state);
+    };
 
     goToPage = (path) => this.props.history.push(path);
 
     handleCancel = () => {
+        console.log('hello cancel');
+
         this.setState({
             brand: '',
             model: '',
