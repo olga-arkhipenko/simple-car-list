@@ -39,28 +39,28 @@ class Form extends Component {
 
     handleChangeOwner = this.handleChange('owner');
 
-    handleSubmit = (event) => {
-        event.preventDefault();
-        console.log(this.props.addCar);
-        this.props.addCar(this.state);
-    };
-
     goToPage = (path) => this.props.history.push(path);
 
-    handleCancel = () => {
-        console.log('hello cancel');
+    clearForm = () => this.setState({
+        brand: '',
+        model: '',
+        productionYear: '',
+        engineCapacity: '',
+        enginePower: '',
+        price: '',
+        owner: ''
+    });
 
-        this.setState({
-            brand: '',
-            model: '',
-            productionYear: '',
-            engineCapacity: '',
-            enginePower: '',
-            price: '',
-            owner: ''
-        });
+    handleCancel = () => {
+        this.clearForm();
         this.goToPage(routes.HOME);
     }
+    
+    handleSubmit = (event) => {
+        event.preventDefault();
+        this.props.onSubmit(this.state);
+        this.clearForm();
+    };
 
     render() {
         return (
