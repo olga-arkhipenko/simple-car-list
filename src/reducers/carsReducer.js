@@ -15,6 +15,7 @@ const initianState = [
 
 const carReducer = (state = initianState, action) => {
     const newCar = action.car;
+    const deleteId = action.id;
 
     switch (action.type) {
     case actionTypes.ADD_CAR: 
@@ -40,7 +41,7 @@ const carReducer = (state = initianState, action) => {
     }
         break
     case actionTypes.DELETE_CAR:
-        return state.filter(car => car.id !== newCar.id);
+        return state.filter(car => car.id !== deleteId);
     default:
         return state
     }

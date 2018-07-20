@@ -12,7 +12,7 @@ const CarsRow = ({ car, onClickDelete, onClickEdit }) => {
             <td className="table-cell" > { car.price } </td>
             <td className="table-cell table-cell--last" > { car.owner } </td>
             <td className="edit-table-cell" >
-                <span className="edit-table-cell__icon edit-table-cell__icon-trash" onClick={ () => onClickDelete(car) } > &#128465; </span>
+                <span className="edit-table-cell__icon edit-table-cell__icon-trash" onClick={ () => onClickDelete(car.id) } > &#128465; </span>
             </td>
             <td className="edit-table-cell" >
                 <span className="edit-table-cell__icon edit-table-cell__icon-pen" onClick={ onClickEdit }> &#128394; </span>
