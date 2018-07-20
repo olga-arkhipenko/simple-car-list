@@ -3,10 +3,6 @@ import { connect } from 'react-redux';
 import EditableTable from '../components/EditableTable';
 import tableHeadings from '../constants/tableHeadings';
 
-const mapStateToProps = (state) => ({
-    cars: state.cars
-});
-
 class EditableTableContainer extends Component {
     render() {
         return (
@@ -14,5 +10,9 @@ class EditableTableContainer extends Component {
         )
     }
 }
+
+const mapStateToProps = (state) => ({
+    cars: state.cars
+});
 
 export default connect(mapStateToProps) (EditableTableContainer);
