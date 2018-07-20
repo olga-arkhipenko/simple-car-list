@@ -14,12 +14,12 @@ const CarsRow = ({ car, onClickDelete }) => {
             <td className="table-cell" > { car.price } </td>
             <td className="table-cell table-cell--last" > { car.owner } </td>
             <td className="edit-table-cell" >
-                <span className="edit-table-cell__icon edit-table-cell__icon-trash" onClick={ () => onClickDelete(car.id) } > &#128465; </span>
+                <span className="edit-table-cell__icon edit-table-cell__icon-trash" onClick={ () => onClickDelete(car.id) } > &#9851; </span>
             </td>
             <td className="edit-table-cell" >
                 <PageLink path={ `${routes.EDIT_FORM}/${car.id}` }>
                     <span className="edit-table-cell__icon edit-table-cell__icon-pen" > 
-                    &#128394;
+                    &#9998;
                     </span>
                 </PageLink>
             </td>
