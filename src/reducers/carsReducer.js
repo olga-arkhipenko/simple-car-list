@@ -1,19 +1,6 @@
 import actionTypes from '../actions/actionTypes';
 
-const initianState = [
-    {
-        id: 1,
-        brand: 'bmw',
-        model: 'x6',
-        productionYear: 1998,
-        engineCapacity: 10,
-        enginePower: 50,
-        price: 15000,
-        owner: "Ivan Ivanov"
-    }
-]
-
-const carReducer = (state = initianState, action) => {
+const carReducer = (state = [], action) => {
     const newCar = action.car;
     const deleteId = action.id;
 

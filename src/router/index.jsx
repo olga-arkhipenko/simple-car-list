@@ -10,7 +10,7 @@ const Router = () => (
     <Switch>
         <Route exact path={routes.HOME} component={ MainPage } />
         <Route path={routes.ADD_FORM} component={ AddFormPage } />
-        <Route path={routes.EDIT_FORM} component={ EditFormPage } />
+        <Route path={`${routes.EDIT_FORM}/:id`} component={ EditFormPage } />
     </Switch>
 );
 
