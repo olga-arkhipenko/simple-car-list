@@ -11,6 +11,26 @@
     font-size: 1.4rem;
 }
 
+.edit-table-cell {
+    padding: 15px 15px;
+
+    text-align: center;
+}
+
+.edit-table-cell__icon {
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.edit-table-cell__icon-trash {
+    color: #c42112;
+}
+
+.edit-table-cell__icon-pen {
+    color: #7565dc;
+}
+
 .table-cell--first {
     border-left: none;
 }

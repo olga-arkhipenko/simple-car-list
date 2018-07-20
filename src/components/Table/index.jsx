@@ -3,8 +3,8 @@ import './style.css';
 import TableHeading from '../TableHeading';
 import CarsRow from '../CarsRow';
 
-const Table = ({ data, headings }) => {
-    const tableBody = data.map(item => <CarsRow key={ item.id } car={ item } />);
+const Table = ({ data, headings, onClickDelete, onClickEdit }) => {
+    const tableBody = data.map(item => <CarsRow key={ item.id } car={ item } onClickDelete={ onClickDelete } onClickEdit={ onClickEdit } />);
 
     return (
         <table className="table">

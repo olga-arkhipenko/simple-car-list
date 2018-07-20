@@ -1,7 +1,9 @@
 const HOME = '/';
-const FORM = '/form';
+const ADD_FORM = '/add_form';
+const EDIT_FORM ='/edit_form';
 
 export default {
     HOME,
-    FORM
+    ADD_FORM,
+    EDIT_FORM
 };
