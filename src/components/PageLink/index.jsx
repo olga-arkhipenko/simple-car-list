@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 
-const PageLink = ({ path, name, type }) => {
-    return (
-        <Link to={ path } className={ `link ${ type || '' }` }>
-            { name || '' }
-        </Link>
-    )
+class PageLink extends Component {
+    render() {
+        const { children } = this.props;
+        return (
+            <Link to={ this.props.path } className={ `link ${ this.props.type || '' }` }>
+                { children }
+            </Link>
+        )
+    }
 };
 
 export default PageLink;
