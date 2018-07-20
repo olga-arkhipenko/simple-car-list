@@ -9,7 +9,9 @@ const EditableTable = ({ data, tableHeadings, onClickDelete, onClickEdit }) => {
     return (
         <div className="table-wrapper">
             <Table data={ data } headings={ tableHeadings } onClickDelete={ onClickDelete } onClickEdit={ onClickEdit }/>
-            <PageLink path={ routes.ADD_FORM } name='Add a new car' type='adding-link'/>
+            <PageLink path={ routes.ADD_FORM } type='adding-link'>
+                Add a car
+            </PageLink>
         </div>
     )
 };

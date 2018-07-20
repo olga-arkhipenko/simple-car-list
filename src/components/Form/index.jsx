@@ -6,9 +6,8 @@ import FormField from '../FormField';
 import FormButton from '../FormButton';
 
 class Form extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
+    static defaultProps = {
+        car: {
             brand: '',
             model: '',
             productionYear: '',
@@ -17,6 +16,11 @@ class Form extends Component {
             price: '',
             owner: ''
         }
+    }
+
+    constructor(props) {
+        super(props);
+        this.state = { ...props.car };
     }
 
     handleChange = (name) => (event) => {

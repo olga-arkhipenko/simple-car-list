@@ -1,5 +1,7 @@
 import React from 'react';
 import './style.css';
+import PageLink from '../PageLink';
+import routes from '../../constants/routes';
 
 const CarsRow = ({ car, onClickDelete, onClickEdit }) => {
     return (
@@ -15,7 +17,11 @@ const CarsRow = ({ car, onClickDelete, onClickEdit }) => {
                 <span className="edit-table-cell__icon edit-table-cell__icon-trash" onClick={ () => onClickDelete(car.id) } > &#128465; </span>
             </td>
             <td className="edit-table-cell" >
-                <span className="edit-table-cell__icon edit-table-cell__icon-pen" onClick={ onClickEdit }> &#128394; </span>
+                <PageLink path={ `${routes.EDIT_FORM}/${car.id}` }>
+                    <span className="edit-table-cell__icon edit-table-cell__icon-pen" > 
+                    &#128394;
+                    </span>
+                </PageLink>
             </td>
         </tr>
     )
