@@ -3,7 +3,7 @@ import './style.css';
 import PageLink from '../PageLink';
 import routes from '../../constants/routes';
 
-const CarsRow = ({ car, onClickDelete, onClickEdit }) => {
+const CarsRow = ({ car, onClickDelete }) => {
     return (
         <tr>
             <td className="table-cell table-cell--first" > { car.brand } </td>
