@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Form from '../components/Form';
-import { withRouter } from 'react-router-dom';
 import { editCar } from '../actions';
 
 class EditFormContainer extends Component {
@@ -20,4 +19,4 @@ const mapStateToProps = (state, ownProps) => ({
     car: state.cars.find(car => car.id === ownProps.match.params.id)
 });
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps) (EditFormContainer));
+export default connect(mapStateToProps, mapDispatchToProps) (EditFormContainer);
