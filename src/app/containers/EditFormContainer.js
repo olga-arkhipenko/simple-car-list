@@ -6,7 +6,8 @@ import { editCar } from '../actions';
 class EditFormContainer extends Component {
     render() {
         return (
-            <Form car={ this.props.car } onSubmit={ this.props.editCar }/>
+            <Form car={ this.props.car }
+                onSubmit={ this.props.editCar }/>
         )
     }
 };

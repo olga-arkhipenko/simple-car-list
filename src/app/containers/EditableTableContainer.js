@@ -7,7 +7,9 @@ import tableHeadings from '../constants/tableHeadings';
 class EditableTableContainer extends Component {
     render() {
         return (
-            <EditableTable data={ this.props.cars } tableHeadings={ tableHeadings } onClickDelete={ this.props.deleteCar }/>
+            <EditableTable data={ this.props.cars }
+                tableHeadings={ tableHeadings }
+                onClickDelete={ this.props.deleteCar }/>
         )
     }
 }
