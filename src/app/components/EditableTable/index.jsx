@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './index.css';
 import Table  from '../Table';
 import PageLink  from '../PageLink';
 import routes from '../../constants/routes';

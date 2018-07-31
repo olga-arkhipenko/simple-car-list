@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './index.css';
 
 const WeatherWidgetCover = ({ isHidden, onClick }) => {
     return (

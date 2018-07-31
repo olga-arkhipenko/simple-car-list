@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import './style.css';
+import './index.css';
 import routes from '../../constants/routes';
 import FormField from '../FormField';
 import FormButton from '../FormButton';

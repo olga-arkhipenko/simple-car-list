@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './index.css';
 
 const TableHeading = ({ headings }) => {
     const headingCells = headings.map((heading, index) => (

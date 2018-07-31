@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './index.css';
 
 const FormField = ({ name, type, value, onChange }) => {
     const lowerCaseName = name[ 0 ].toLowerCase().concat(name.slice(1));

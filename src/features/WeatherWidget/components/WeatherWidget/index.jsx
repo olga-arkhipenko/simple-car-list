@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style.css';
+import './index.css';
 import WeatherWidgetCover from '../WeatherWidgetCover';
 
 class WeatherWidget extends Component {

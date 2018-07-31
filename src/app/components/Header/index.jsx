@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import routes from '../../constants/routes';
-import './style.css';
+import './index.css';
 
 const Header = () => {
     return (
