@@ -11,12 +11,16 @@ module.exports = {
         'no-labels': 0,
         'no-unused-expressions': 0,
         'no-unused-labels': 0,
-        'space-in-parens': [1, 'always'],
+        'space-in-parens': [1, 'never'],
         'template-curly-spacing': [1, 'always'],
-        'array-bracket-spacing': [ 2, 'always' ],
+        'array-bracket-spacing': ["error", "always", { "singleValue": false }],
         'object-curly-spacing': [ 2, 'always' ],
         'computed-property-spacing': [ 2, 'always' ],
-        'no-multiple-empty-lines': [ 2, { 'max': 1, 'maxEOF': 0, 'maxBOF': 0 } ],
+        'no-multiple-empty-lines': [ 2, {
+            'max': 1,
+            'maxEOF': 0,
+            'maxBOF': 0
+        } ],
         'quotes': [ 1, 'single', 'avoid-escape' ],
         'no-use-before-define': [ 2, { 'functions': false } ],
         'semi': [1, 'always'],
@@ -26,17 +30,32 @@ module.exports = {
         'react/jsx-curly-spacing': [ 2, 'always' ],
         'react/jsx-indent': [ 2, 4 ],
         'react/jsx-max-props-per-line': [1, { 'maximum': 1 }],
-        "react/jsx-tag-spacing": [ 2, { 'beforeSelfClosing': 'always' }],
-        "react/jsx-no-duplicate-props": [ 2 ],
+        'react/jsx-tag-spacing': [ 2, {
+            'closingSlash': 'never',
+            'beforeSelfClosing': 'never',
+            'afterOpening': 'never',
+            'beforeClosing': 'never' 
+        }],
+        'react/jsx-no-duplicate-props': [ 2 ],
         'react/jsx-closing-bracket-location': [1, 'after-props'],
+        'react/jsx-wrap-multilines': [ 1, {
+            'declaration': 'parens-new-line',
+            'assignment': 'parens-new-line',
+            'return': 'parens-new-line',
+            'arrow': 'parens-new-line',
+            'condition': 'parens',
+            'logical': 'parens',
+            'prop': 'parens-new-line'
+          }],
         'react/prop-types': [ 1 ],
         'react/no-array-index-key': [ 1 ],
-        'class-methods-use-this': [ 1 ],
+        'class-methods-use-this': 0,
         'no-undef': [ 1 ],
         'no-case-declarations': [ 1 ],
         'no-return-assign': [ 1 ],
         'no-shadow': [ 1 ],
         'camelcase': [ 1 ],
-        'space-before-function-paren': [ 2, 'always' ]
+        'space-before-function-paren': [ 2, 'always' ],
+        'arrow-parens': [ 2, 'as-needed']
     }
 }
