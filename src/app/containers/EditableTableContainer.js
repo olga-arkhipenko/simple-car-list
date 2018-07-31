@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { deleteCar } from '../actions';
+import { deleteCar } from '../actionCreators';
 import EditableTable from '../components/EditableTable';
 import tableHeadings from '../constants/tableHeadings';
 

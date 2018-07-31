@@ -1,4 +1,4 @@
-import actionTypes from './actionTypes';
+import actionTypes from '../constants/actionTypes';
 import carMapper from '../mappers/carMapper';
 
 const addCar = data => {

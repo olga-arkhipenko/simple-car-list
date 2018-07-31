@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Form from '../components/Form';
-import { addCar } from '../actions';
+import { addCar } from '../actionCreators';
 
 class AddFormContainer extends Component {
     render () {
