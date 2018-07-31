@@ -13,7 +13,7 @@ module.exports = {
         'no-unused-labels': 0,
         'space-in-parens': [1, 'never'],
         'template-curly-spacing': [1, 'always'],
-        'array-bracket-spacing': ["error", "always", { "singleValue": false }],
+        'array-bracket-spacing': ['error', 'always', { 'singleValue': false }],
         'object-curly-spacing': [ 2, 'always' ],
         'computed-property-spacing': [ 2, 'always' ],
         'no-multiple-empty-lines': [ 2, {
@@ -43,10 +43,11 @@ module.exports = {
             'assignment': 'parens-new-line',
             'return': 'parens-new-line',
             'arrow': 'parens-new-line',
-            'condition': 'parens',
-            'logical': 'parens',
+            'condition': 'parens-new-line',
+            'logical': 'parens-new-line',
             'prop': 'parens-new-line'
           }],
+        'react/jsx-first-prop-new-line': [ 2, 'multiline-multiprop' ],
         'react/prop-types': [ 1 ],
         'react/no-array-index-key': [ 1 ],
         'class-methods-use-this': 0,
@@ -56,6 +57,7 @@ module.exports = {
         'no-shadow': [ 1 ],
         'camelcase': [ 1 ],
         'space-before-function-paren': [ 2, 'always' ],
-        'arrow-parens': [ 2, 'as-needed']
+        'arrow-parens': [ 2, 'as-needed'],
+        'no-trailing-spaces': [ 2 ]
     }
 }
