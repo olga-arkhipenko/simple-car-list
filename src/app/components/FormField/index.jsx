@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 const FormField = ({ name, type, value, onChange }) => {
-    const lowerCaseName = name[0].toLowerCase().concat(name.slice(1));
+    const lowerCaseName = name[ 0 ].toLowerCase().concat(name.slice(1));
 
     return (
         <div className="form-field">
@@ -13,10 +13,10 @@ const FormField = ({ name, type, value, onChange }) => {
                 value={ value }
                 name={ name }
                 required
-                placeholder={`Enter ${ lowerCaseName }` }
+                placeholder={ `Enter ${ lowerCaseName }` }
                 onChange={ onChange }/>
         </div>
-    )
+    );
 };
 
 export default FormField;

@@ -8,11 +8,11 @@ const Header = () => {
         <header className="header">
             <Link to={ routes.HOME }>
                 <p className="logo">
-                Cars list 
+                    Cars list
                 </p>
             </Link>
         </header>
-    )
+    );
 };
 
 export default Header;

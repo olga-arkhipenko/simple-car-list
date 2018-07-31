@@ -2,8 +2,12 @@ import React from 'react';
 import './style.css';
 
 const TableHeading = ({ headings }) => {
-    const headingCells = headings.map((heading, index) => <th key={ index }
-        className="table-heading__cell"> { heading } </th>);
+    const headingCells = headings.map((heading, index) => (
+        <th
+            key={ index }
+            className="table-heading__cell"> { heading }
+        </th>
+    ));
 
     return (
         <thead>

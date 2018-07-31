@@ -5,7 +5,7 @@ const carReducer = (state = [], action) => {
     const deleteId = action.id;
 
     switch (action.type) {
-    case actionTypes.ADD_CAR: 
+    case actionTypes.ADD_CAR:
         return [
             ...state,
             newCar
@@ -15,7 +15,7 @@ const carReducer = (state = [], action) => {
         if (carIndex >= 0) {
             return state.reduce((newState, currentCar) => {
                 if(currentCar.id === newCar.id) {
-                    const newCurrentCar = {...currentCar, ...newCar};
+                    const newCurrentCar = { ...currentCar, ...newCar };
                     newState.push(newCurrentCar);
                     return newState;
                 }
@@ -26,12 +26,12 @@ const carReducer = (state = [], action) => {
             }, []);
         }
     }
-        break
+        break;
     case actionTypes.DELETE_CAR:
         return state.filter(car => car.id !== deleteId);
     default:
-        return state
+        return state;
     }
-}
+};
 
 export default carReducer;

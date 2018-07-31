@@ -6,7 +6,8 @@ class PageLink extends Component {
     render () {
         const { children } = this.props;
         return (
-            <Link to={ this.props.path }
+            <Link
+                to={ this.props.path }
                 className={ `link ${ this.props.type || '' }` } >
                 { children }
             </Link>

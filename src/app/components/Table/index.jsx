@@ -4,9 +4,12 @@ import TableHeading from '../TableHeading';
 import CarsRow from '../CarsRow';
 
 const Table = ({ data, headings, onClickDelete }) => {
-    const tableBody = data.map(item => <CarsRow key={ item.id }
-        car={ item }
-        onClickDelete={ onClickDelete } />);
+    const tableBody = data.map(item => (
+        <CarsRow
+            key={ item.id }
+            car={ item }
+            onClickDelete={ onClickDelete }/>
+    ));
 
     return (
         <table className="table">
@@ -16,7 +19,7 @@ const Table = ({ data, headings, onClickDelete }) => {
                 { tableBody }
             </tbody>
         </table>
-    )
+    );
 };
 
 export default Table;

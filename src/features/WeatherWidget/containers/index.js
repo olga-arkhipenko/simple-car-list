@@ -3,14 +3,14 @@ import { connect } from 'react-redux';
 import WeatherWidget from '../components/WeatherWidget';
 
 class WeatherWidgetContainer extends Component {
-    render() {
+    render () {
         return (
             <WeatherWidget/>
-        )
+        );
     }
 };
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
     weatherData: state.weatherData
 });
 

@@ -4,7 +4,7 @@ import Header from './app/components/Header';
 import WeatherWidgetContainer from './features/WeatherWidget/containers';
 
 class App extends Component {
-    render() {
+    render () {
         return (
             <div className="App">
                 <Header/>

@@ -3,11 +3,11 @@ import './style.css';
 import WeatherWidgetCover from '../WeatherWidgetCover';
 
 class WeatherWidget extends Component {
-    constructor(props) {
+    constructor (props) {
         super(props);
         this.state = {
             isCoverHidden: false
-        }
+        };
     }
 
     hideCover = () => this.setState({
@@ -19,7 +19,7 @@ class WeatherWidget extends Component {
             <div className="widget">
                 { !this.state.isCoverHidden && <WeatherWidgetCover onClick={ this.hideCover }/> }
             </div>
-        )
+        );
     }
 
 };

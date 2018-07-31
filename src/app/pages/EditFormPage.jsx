@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import EditFormContainer from '../containers/EditFormContainer';
 
 class EditFormPage extends Component {
-    render() {
+    render () {
         return (
             <main>
                 <EditFormContainer/>
             </main>
-        )
+        );
     }
 }
 

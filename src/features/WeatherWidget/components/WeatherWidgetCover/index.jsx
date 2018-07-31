@@ -3,11 +3,10 @@ import './style.css';
 
 const WeatherWidgetCover = ({ isHidden, onClick }) => {
     return (
-        <div 
+        <div
             className="widget__cover"
-            onClick={ onClick }
-        />
-    )
+            onClick={ onClick }/>
+    );
 };
 
 export default WeatherWidgetCover;
