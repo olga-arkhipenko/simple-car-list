@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './index.css';
 import WeatherWidgetCover from '../WeatherWidgetCover';
+import './index.css';
 
 class WeatherWidget extends Component {
     constructor (props) {

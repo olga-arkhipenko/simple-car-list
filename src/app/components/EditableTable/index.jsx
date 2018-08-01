@@ -1,8 +1,8 @@
 import React from 'react';
-import './index.css';
 import Table  from '../Table';
 import PageLink  from '../PageLink';
 import routes from '../../constants/routes';
+import './index.css';
 
 const EditableTable = ({ data, tableHeadings, onClickDelete, onClickEdit }) => {
     return (

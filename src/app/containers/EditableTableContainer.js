@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { deleteCar } from '../actionCreators';
 import EditableTable from '../components/EditableTable';
+import { deleteCar } from '../actionCreators';
 import tableHeadings from '../constants/tableHeadings';
 
 class EditableTableContainer extends Component {

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import './index.css';
-import routes from '../../constants/routes';
 import FormField from '../FormField';
 import FormButton from '../FormButton';
+import routes from '../../constants/routes';
+import './index.css';
 
 class Form extends Component {
     static defaultProps = {

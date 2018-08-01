@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Form from '../components/Form';
 import { withRouter } from 'react-router-dom';
+import Form from '../components/Form';
 import { editCar } from '../actionCreators';
 
 class EditFormContainer extends Component {

@@ -1,5 +1,5 @@
-import Car from '../models/car';
 import uuidv1 from 'uuid/v1';
+import Car from '../models/car';
 
 const mapToCar = data => {
     const car = new Car();
