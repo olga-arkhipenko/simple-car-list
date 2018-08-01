@@ -6,26 +6,28 @@ import routes from '../../constants/routes';
 import './index.css';
 
 class Form extends Component {
-    static defaultProps = {
-        car: {
-            brand: '',
-            model: '',
-            productionYear: '',
-            engineCapacity: '',
-            enginePower: '',
-            price: '',
-            owner: ''
-        }
-    }
-
     constructor(props) {
         super(props);
-        this.state = { ...props.car };
+        this.state = {
+            car: {
+                id: props.car ? props.car.id : '',
+                brand: props.car ? props.car.brand : '',
+                model: props.car ? props.car.model : '',
+                productionYear: props.car ? props.car.productionYear : '',
+                engineCapacity: props.car ? props.car.engineCapacity : '',
+                enginePower: props.car ? props.car.enginePower : '',
+                price: props.car ? props.car.price : '',
+                owner: props.car ? props.car.owner : ''
+            }
+        };
     }
 
     handleChange = name => event => {
         this.setState({
-            [ name ]: event.target.value
+            car: {
+                ...this.state.car,
+                [ name ]: event.target.value
+            }
         });
     }
 
@@ -46,13 +48,15 @@ class Form extends Component {
     goToPage = path => this.props.history.push(path);
 
     clearForm = () => this.setState({
-        brand: '',
-        model: '',
-        productionYear: '',
-        engineCapacity: '',
-        enginePower: '',
-        price: '',
-        owner: ''
+        car: {
+            brand: '',
+            model: '',
+            productionYear: '',
+            engineCapacity: '',
+            enginePower: '',
+            price: '',
+            owner: ''
+        }
     });
 
     handleCancel = () => {
@@ -62,7 +66,7 @@ class Form extends Component {
 
     handleSubmit = event => {
         event.preventDefault();
-        this.props.onSubmit(this.state);
+        this.props.onSubmit(this.state.car);
         this.clearForm();
     };
 
@@ -75,43 +79,43 @@ class Form extends Component {
                 <FormField
                     name="Brand"
                     type="text"
-                    value={this.state.brand}
+                    value={this.state.car.brand}
                     onChange={this.handleChangeBrand}
                 />
                 <FormField
                     name="Model"
                     type="text"
-                    value={this.state.model}
+                    value={this.state.car.model}
                     onChange={this.handleChangeModel}
                 />
                 <FormField
                     name="Production year"
                     type="number"
-                    value={this.state.productionYear}
+                    value={this.state.car.productionYear}
                     onChange={this.handleChangeProductionYear}
                 />
                 <FormField
                     name="Engine capacity"
                     type="number"
-                    value={this.state.engineCapacity}
+                    value={this.state.car.engineCapacity}
                     onChange={this.handleChangeEngineCapacity}
                 />
                 <FormField
                     name="Engine power"
                     type="number"
-                    value={this.state.enginePower}
+                    value={this.state.car.enginePower}
                     onChange={this.handleChangeEnginePower}
                 />
                 <FormField
                     name="Price"
                     type="number"
-                    value={this.state.price}
+                    value={this.state.car.price}
                     onChange={this.handleChangePrice}
                 />
                 <FormField
                     name="Owner"
                     type="text"
-                    value={this.state.owner}
+                    value={this.state.car.owner}
                     onChange={this.handleChangeOwner}
                 />
                 <div className="form__actions">

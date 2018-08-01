@@ -11,12 +11,12 @@ const carReducer = (state = [], action) => {
             ];
         case actionTypes.EDIT_CAR:
             return state.reduce((newState, currentCar) => {
+                console.log(currentCar, newCar);
                 if (currentCar.id === newCar.id) {
                     const newCurrentCar = { ...currentCar, ...newCar };
                     newState.push(newCurrentCar);
                     return newState;
                 }
-
                 newState.push(currentCar);
                 return newState;
             }, []);

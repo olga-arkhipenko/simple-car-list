@@ -12,6 +12,7 @@ const carActionCreators = {
 
     editCar: data => {
         const car = carMapper.mapToCar(data);
+        console.log(`${ JSON.stringify(car) } from ac`);
         return {
             type: actionTypes.EDIT_CAR,
             car
