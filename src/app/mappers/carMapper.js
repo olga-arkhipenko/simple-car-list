@@ -2,15 +2,26 @@ import uuidv1 from 'uuid/v1';
 import Car from '../models/car';
 
 const mapToCar = data => {
+    const {
+        id,
+        brand,
+        model,
+        productionYear,
+        engineCapacity,
+        enginePower,
+        price,
+        owner
+    } = data;
+
     const car = new Car();
-    car.id = data.id || uuidv1();
-    car.brand = data.brand;
-    car.model = data.model;
-    car.productionYear = data.productionYear;
-    car.engineCapacity = data.engineCapacity;
-    car.enginePower = data.enginePower;
-    car.price = data.price;
-    car.owner = data.owner;
+    car.id = id || uuidv1();
+    car.brand = brand;
+    car.model = model;
+    car.productionYear = productionYear;
+    car.engineCapacity = engineCapacity;
+    car.enginePower = enginePower;
+    car.price = price;
+    car.owner = owner;
 
     return car;
 };

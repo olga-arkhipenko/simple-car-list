@@ -5,12 +5,13 @@ import { deleteCar } from '../actionCreators';
 import tableHeadings from '../constants/tableHeadings';
 
 class EditableTableContainer extends Component {
-    render () {
+    render() {
         return (
             <EditableTable
-                data={ this.props.cars }
-                tableHeadings={ tableHeadings }
-                onClickDelete={ this.props.deleteCar }/>
+                data={this.props.cars}
+                tableHeadings={tableHeadings}
+                onClickDelete={this.props.deleteCar}
+            />
         );
     }
 }
@@ -23,4 +24,4 @@ const mapDispatchToProps = dispatch => ({
     deleteCar: id => dispatch(deleteCar(id))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps) (EditableTableContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(EditableTableContainer);

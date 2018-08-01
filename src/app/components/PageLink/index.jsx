@@ -3,16 +3,17 @@ import { Link } from 'react-router-dom';
 import './index.css';
 
 class PageLink extends Component {
-    render () {
+    render() {
         const { children } = this.props;
         return (
             <Link
-                to={ this.props.path }
-                className={ `link ${ this.props.type || '' }` } >
+                to={this.props.path}
+                className={`link ${ this.props.type || '' }`}
+            >
                 { children }
             </Link>
         );
     }
-};
+}
 
 export default PageLink;

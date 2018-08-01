@@ -6,4 +6,4 @@ export default {
     ADD_CAR,
     EDIT_CAR,
     DELETE_CAR
-}
+};

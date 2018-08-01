@@ -10,12 +10,13 @@ const FormField = ({ name, type, value, onChange }) => {
             <p className="form-field__name"> { name } </p>
             <input
                 className="form-field__input"
-                type={ type }
-                value={ value }
-                name={ name }
+                type={type}
+                value={value}
+                name={name}
                 required
-                placeholder={ placeholderName }
-                onChange={ onChange }/>
+                placeholder={placeholderName}
+                onChange={onChange}
+            />
         </div>
     );
 };

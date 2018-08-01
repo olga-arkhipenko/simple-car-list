@@ -17,11 +17,9 @@ const editCar = data => {
     };
 };
 
-const deleteCar = id => {
-    return {
-        type: actionTypes.DELETE_CAR,
-        id
-    };
-};
+const deleteCar = id => ({
+    type: actionTypes.DELETE_CAR,
+    id
+});
 
 export { addCar, deleteCar, editCar };

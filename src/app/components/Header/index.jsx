@@ -3,16 +3,14 @@ import { Link } from 'react-router-dom';
 import routes from '../../constants/routes';
 import './index.css';
 
-const Header = () => {
-    return (
-        <header className="header">
-            <Link to={ routes.HOME }>
-                <p className="logo">
+const Header = () => (
+    <header className="header">
+        <Link to={routes.HOME}>
+            <p className="logo">
                     Cars list
-                </p>
-            </Link>
-        </header>
-    );
-};
+            </p>
+        </Link>
+    </header>
+);
 
 export default Header;
