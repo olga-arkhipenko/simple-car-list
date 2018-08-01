@@ -9,16 +9,19 @@ const Router = () => (
     <Switch>
         <Route
             exact
-            path={ routes.HOME }
-            component={ MainPage }/>
+            path={routes.HOME}
+            component={MainPage}
+        />
         <Route
             exact
-            path={ routes.ADD_FORM }
-            component={ AddFormPage }/>
+            path={routes.ADD_FORM}
+            component={AddFormPage}
+        />
         <Route
             exact
-            path={ `${ routes.EDIT_FORM }/:id` }
-            component={ EditFormPage }/>
+            path={`${ routes.EDIT_FORM }/:id`}
+            component={EditFormPage}
+        />
     </Switch>
 );
 
