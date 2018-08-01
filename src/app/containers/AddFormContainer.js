@@ -1,18 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import Form from '../components/Form';
-import { addCar } from '../actionCreators';
+import { carActionCreators } from '../actionCreators';
 
-class AddFormContainer extends Component {
-    render() {
-        return (
-            <Form onSubmit={this.props.addCar} />
-        );
-    }
-}
+const AddFormContainer = ({ addCar }) => (
+    <Form onSubmit={addCar} />
+);
 
 const mapDispatchToProps = dispatch => ({
-    addCar: data => dispatch(addCar(data))
+    addCar: data => dispatch(carActionCreators.addCar(data))
 });
 
 export default connect(null, mapDispatchToProps)(AddFormContainer);

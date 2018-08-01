@@ -1,22 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import Form from '../components/Form';
-import { editCar } from '../actionCreators';
+import { carActionCreators } from '../actionCreators';
 
-class EditFormContainer extends Component {
-    render() {
-        return (
-            <Form
-                car={this.props.car}
-                onSubmit={this.props.editCar}
-            />
-        );
-    }
-}
+const EditFormContainer = ({ car, editCar }) => (
+    <Form
+        car={car}
+        onSubmit={editCar}
+    />
+);
 
 const mapDispatchToProps = dispatch => ({
-    editCar: data => dispatch(editCar(data))
+    editCar: data => dispatch(carActionCreators.editCar(data))
 });
 
 const mapStateToProps = (state, ownProps) => ({
