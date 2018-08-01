@@ -1,14 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import EditFormContainer from '../containers/EditFormContainer';
 
-class EditFormPage extends Component {
-    render () {
-        return (
-            <main>
-                <EditFormContainer/>
-            </main>
-        );
-    }
-}
+const EditFormPage = () => (
+    <main>
+        <EditFormContainer />
+    </main>
+);
 
 export default EditFormPage;

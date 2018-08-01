@@ -1,14 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import EditableTableContainer from '../containers/EditableTableContainer';
 
-class MainPage extends Component {
-    render () {
-        return (
-            <main>
-                <EditableTableContainer/>
-            </main>
-        );
-    }
-}
+const MainPage = () => (
+    <main>
+        <EditableTableContainer />
+    </main>
+);
 
 export default MainPage;
