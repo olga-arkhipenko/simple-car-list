@@ -3,6 +3,7 @@ import './index.css';
 
 const FormField = ({ name, type, value, onChange }) => {
     const lowerCaseName = name[ 0 ].toLowerCase().concat(name.slice(1));
+    const placeholderName = `Enter ${ lowerCaseName }`;
 
     return (
         <div className="form-field">
@@ -13,7 +14,7 @@ const FormField = ({ name, type, value, onChange }) => {
                 value={ value }
                 name={ name }
                 required
-                placeholder={ `Enter ${ lowerCaseName }` }
+                placeholder={ placeholderName }
                 onChange={ onChange }/>
         </div>
     );
