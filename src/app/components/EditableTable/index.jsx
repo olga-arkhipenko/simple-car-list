@@ -7,13 +7,13 @@ import './index.css';
 const EditableTable = ({ data, tableHeadings, onClickDelete, onClickEdit }) => (
     <div className="table-wrapper">
         <Table
-            data={data}
-            headings={tableHeadings}
-            onClickDelete={onClickDelete}
-            onClickEdit={onClickEdit}
+            data={ data }
+            headings={ tableHeadings }
+            onClickDelete={ onClickDelete }
+            onClickEdit={ onClickEdit }
         />
         <PageLink
-            path={routes.ADD_FORM}
+            path={ routes.ADD_FORM }
             type="adding-link"
         >
                 Add a car

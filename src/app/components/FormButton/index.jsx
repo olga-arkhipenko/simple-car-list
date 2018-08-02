@@ -3,10 +3,10 @@ import './index.css';
 
 const FormButton = ({ value, type, design, onClick }) => (
     <input
-        className={`form-button ${ design }`}
-        type={type}
-        value={value}
-        onClick={onClick}
+        className={ `form-button ${ design }` }
+        type={ type }
+        value={ value }
+        onClick={ onClick }
     />
 );
 

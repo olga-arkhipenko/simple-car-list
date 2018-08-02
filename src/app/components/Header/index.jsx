@@ -5,7 +5,7 @@ import './index.css';
 
 const Header = () => (
     <header className="header">
-        <Link to={routes.HOME}>
+        <Link to={ routes.HOME }>
             <p className="logo">
                     Cars list
             </p>

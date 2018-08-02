@@ -4,7 +4,7 @@ import Form from '../components/Form';
 import { carActionCreators } from '../actionCreators';
 
 const AddFormContainer = ({ addCar }) => (
-    <Form onSubmit={addCar} />
+    <Form onSubmit={ addCar } />
 );
 
 const mapDispatchToProps = dispatch => ({

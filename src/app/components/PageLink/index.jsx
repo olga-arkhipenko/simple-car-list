@@ -4,8 +4,8 @@ import './index.css';
 
 const PageLink = ({ children, path, type }) => (
     <Link
-        to={path}
-        className={`link ${ type || '' }`}
+        to={ path }
+        className={ `link ${ type || '' }` }
     >
         { children }
     </Link>

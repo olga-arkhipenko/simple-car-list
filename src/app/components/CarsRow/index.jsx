@@ -15,13 +15,13 @@ const CarsRow = ({ car, onClickDelete }) => (
         <td className="edit-table-cell">
             <span
                 className="edit-table-cell__icon edit-table-cell__icon-trash"
-                onClick={() => onClickDelete(car.id)}
+                onClick={ () => onClickDelete(car.id) }
             >
                     &#9851;
             </span>
         </td>
         <td className="edit-table-cell">
-            <PageLink path={`${ routes.EDIT_FORM }/${ car.id }`}>
+            <PageLink path={ `${ routes.EDIT_FORM }/${ car.id }` }>
                 <span className="edit-table-cell__icon edit-table-cell__icon-pen">
                         &#9998;
                 </span>

@@ -6,9 +6,9 @@ import tableHeadings from '../constants/tableHeadings';
 
 const EditableTableContainer = ({ cars, deleteCar }) => (
     <EditableTable
-        data={cars}
-        tableHeadings={tableHeadings}
-        onClickDelete={deleteCar}
+        data={ cars }
+        tableHeadings={ tableHeadings }
+        onClickDelete={ deleteCar }
     />
 );
 

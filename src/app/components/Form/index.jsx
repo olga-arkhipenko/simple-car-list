@@ -74,62 +74,62 @@ class Form extends Component {
         return (
             <form
                 className="form"
-                onSubmit={this.handleSubmit}
+                onSubmit={ this.handleSubmit }
             >
                 <FormField
                     name="Brand"
                     type="text"
-                    value={this.state.car.brand}
-                    onChange={this.handleChangeBrand}
+                    value={ this.state.car.brand }
+                    onChange={ this.handleChangeBrand }
                 />
                 <FormField
                     name="Model"
                     type="text"
-                    value={this.state.car.model}
-                    onChange={this.handleChangeModel}
+                    value={ this.state.car.model }
+                    onChange={ this.handleChangeModel }
                 />
                 <FormField
                     name="Production year"
                     type="number"
-                    value={this.state.car.productionYear}
-                    onChange={this.handleChangeProductionYear}
+                    value={ this.state.car.productionYear }
+                    onChange={ this.handleChangeProductionYear }
                 />
                 <FormField
                     name="Engine capacity"
                     type="number"
-                    value={this.state.car.engineCapacity}
-                    onChange={this.handleChangeEngineCapacity}
+                    value={ this.state.car.engineCapacity }
+                    onChange={ this.handleChangeEngineCapacity }
                 />
                 <FormField
                     name="Engine power"
                     type="number"
-                    value={this.state.car.enginePower}
-                    onChange={this.handleChangeEnginePower}
+                    value={ this.state.car.enginePower }
+                    onChange={ this.handleChangeEnginePower }
                 />
                 <FormField
                     name="Price"
                     type="number"
-                    value={this.state.car.price}
-                    onChange={this.handleChangePrice}
+                    value={ this.state.car.price }
+                    onChange={ this.handleChangePrice }
                 />
                 <FormField
                     name="Owner"
                     type="text"
-                    value={this.state.car.owner}
-                    onChange={this.handleChangeOwner}
+                    value={ this.state.car.owner }
+                    onChange={ this.handleChangeOwner }
                 />
                 <div className="form__actions">
                     <FormButton
                         value="Submit"
                         type="submit"
                         design="accept"
-                        onClick={this.handleSubmit}
+                        onClick={ this.handleSubmit }
                     />
                     <FormButton
                         value="Cancel"
                         type="reset"
                         design="cancel"
-                        onClick={this.handleCancel}
+                        onClick={ this.handleCancel }
                     />
                 </div>
             </form>

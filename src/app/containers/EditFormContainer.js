@@ -6,8 +6,8 @@ import { carActionCreators } from '../actionCreators';
 
 const EditFormContainer = ({ car, editCar }) => (
     <Form
-        car={car}
-        onSubmit={editCar}
+        car={ car }
+        onSubmit={ editCar }
     />
 );
 

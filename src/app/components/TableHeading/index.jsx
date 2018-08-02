@@ -4,7 +4,7 @@ import './index.css';
 const TableHeading = ({ headings }) => {
     const headingCells = headings.map((heading, index) => (
         <th
-            key={index}
+            key={ index }
             className="table-heading__cell"
         > { heading }
         </th>
