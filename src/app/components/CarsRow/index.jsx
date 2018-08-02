@@ -3,7 +3,7 @@ import PageLink from '../PageLink';
 import routes from '../../constants/routes';
 import './index.css';
 
-const CarsRow = ({ car, onClickDelete }) => {
+const CarsRow = ({ car, onDelete }) => {
     const {
         id,
         brand,
@@ -17,17 +17,17 @@ const CarsRow = ({ car, onClickDelete }) => {
 
     return (
         <tr>
-            <td className="table-cell table-cell--first"> {brand} </td>
-            <td className="table-cell"> {model} </td>
-            <td className="table-cell"> {productionYear} </td>
-            <td className="table-cell"> {engineCapacity} </td>
-            <td className="table-cell"> {enginePower} </td>
-            <td className="table-cell"> {price} </td>
-            <td className="table-cell table-cell--last"> {owner} </td>
+            <td className="table-cell table-cell--first"> { brand } </td>
+            <td className="table-cell"> { model } </td>
+            <td className="table-cell"> { productionYear } </td>
+            <td className="table-cell"> { engineCapacity } </td>
+            <td className="table-cell"> { enginePower } </td>
+            <td className="table-cell"> { price } </td>
+            <td className="table-cell table-cell--last"> { owner } </td>
             <td className="edit-table-cell">
                 <span
                     className="edit-table-cell__icon edit-table-cell__icon-trash"
-                    onClick={ () => onClickDelete(id) }
+                    onClick={ () => onDelete(id) }
                 >
                     &#9851;
                 </span>

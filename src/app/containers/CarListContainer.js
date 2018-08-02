@@ -8,7 +8,7 @@ const CarListContainer = ({ cars, deleteCar }) => (
     <EditableTable
         data={ cars }
         tableHeadings={ tableHeadings }
-        onClickDelete={ deleteCar }
+        onDelete={ deleteCar }
     />
 );
 

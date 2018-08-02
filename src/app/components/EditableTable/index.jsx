@@ -4,13 +4,12 @@ import PageLink from '../PageLink';
 import routes from '../../constants/routes';
 import './index.css';
 
-const EditableTable = ({ data, tableHeadings, onClickDelete, onClickEdit }) => (
+const EditableTable = ({ data, tableHeadings, onDelete }) => (
     <div className="table-wrapper">
         <Table
             data={ data }
             headings={ tableHeadings }
-            onClickDelete={ onClickDelete }
-            onClickEdit={ onClickEdit }
+            onDelete={ onDelete }
         />
         <PageLink
             path={ routes.ADD_FORM }

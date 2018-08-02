@@ -3,12 +3,12 @@ import './index.css';
 import TableHeading from '../TableHeading';
 import CarsRow from '../CarsRow';
 
-const Table = ({ data, headings, onClickDelete }) => {
+const Table = ({ data, headings, onDelete }) => {
     const tableBody = data.map(item => (
         <CarsRow
             key={ item.id }
             car={ item }
-            onClickDelete={ onClickDelete }
+            onDelete={ onDelete }
         />
     ));
 
