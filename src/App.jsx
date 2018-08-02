@@ -1,12 +1,12 @@
 import React from 'react';
-import Router from './app/router';
+import AppContainer from './app/containers/AppContainer';
 import Header from './app/components/Header';
 // import WeatherWidgetContainer from './features/WeatherWidget/containers';
 
 const App = () => (
     <div className="App">
         <Header />
-        <Router />
+        <AppContainer />
         {/* <WeatherWidgetContainer/> */}
     </div>
 );
