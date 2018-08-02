@@ -30,6 +30,8 @@
             "ObjectPattern": { "minProperties": 6, "multiline": true, "consistent": true }
         }],
         "no-undef": "warn",
+        "no-confusing-arrow": "off",
+        "no-param-reassign": "warn",
         "import/prefer-default-export": "off",
         "import/no-extraneous-dependencies":"off",
         "import/extensions": "off",
