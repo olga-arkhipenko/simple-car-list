@@ -8,14 +8,15 @@ import './index.css';
 
 class Form extends Component {
     constructor(props) {
-        const carOwnProperties = Object.getOwnPropertyNames(props.car);
+        super(props);
+
+        this.carPropertyNames = Object.getOwnPropertyNames(props.car);
         const getCarPropertyOrDefault = propertyName => getPropertyOrDefault(props.car, car => car[ propertyName ]);
-        const car = carOwnProperties.reduce((resultObject, propertyName) => {
-            resultObject[ propertyName ] = getCarPropertyOrDefault(propertyName);
-            return resultObject;
+        const car = this.carPropertyNames.reduce((result, propertyName) => {
+            result[ propertyName ] = getCarPropertyOrDefault(propertyName);
+            return result;
         }, {});
 
-        super(props);
         this.state = { car };
     }
 
@@ -39,7 +40,7 @@ class Form extends Component {
 
     handleChangeEngineCapacity = this.handleChange('engineCapacity');
 
-    handleChangeEnginePower= this.handleChange('enginePower');
+    handleChangeEnginePower = this.handleChange('enginePower');
 
     handleChangePrice = this.handleChange('price');
 
@@ -47,17 +48,13 @@ class Form extends Component {
 
     goToPage = path => this.props.history.push(path);
 
-    clearForm = () => this.setState({
-        car: {
-            brand: '',
-            model: '',
-            productionYear: '',
-            engineCapacity: '',
-            enginePower: '',
-            price: '',
-            owner: ''
-        }
-    });
+    clearForm = () => {
+        const car = this.carPropertyNames.reduce((result, propertyName) => {
+            result[ propertyName ] = '';
+            return result;
+        }, {});
+        this.setState({ car });
+    };
 
     handleCancel = () => {
         this.clearForm();
@@ -71,6 +68,16 @@ class Form extends Component {
     };
 
     render() {
+        const {
+            brand,
+            model,
+            productionYear,
+            engineCapacity,
+            enginePower,
+            price,
+            owner
+        } = this.state.car;
+
         return (
             <form
                 className="form"
@@ -79,43 +86,43 @@ class Form extends Component {
                 <FormField
                     name="Brand"
                     type="text"
-                    value={ this.state.car.brand }
+                    value={ brand }
                     onChange={ this.handleChangeBrand }
                 />
                 <FormField
                     name="Model"
                     type="text"
-                    value={ this.state.car.model }
+                    value={ model }
                     onChange={ this.handleChangeModel }
                 />
                 <FormField
                     name="Production year"
                     type="number"
-                    value={ this.state.car.productionYear }
+                    value={ productionYear }
                     onChange={ this.handleChangeProductionYear }
                 />
                 <FormField
                     name="Engine capacity"
                     type="number"
-                    value={ this.state.car.engineCapacity }
+                    value={ engineCapacity }
                     onChange={ this.handleChangeEngineCapacity }
                 />
                 <FormField
                     name="Engine power"
                     type="number"
-                    value={ this.state.car.enginePower }
+                    value={ enginePower }
                     onChange={ this.handleChangeEnginePower }
                 />
                 <FormField
                     name="Price"
                     type="number"
-                    value={ this.state.car.price }
+                    value={ price }
                     onChange={ this.handleChangePrice }
                 />
                 <FormField
                     name="Owner"
                     type="text"
-                    value={ this.state.car.owner }
+                    value={ owner }
                     onChange={ this.handleChangeOwner }
                 />
                 <div className="form__actions">
