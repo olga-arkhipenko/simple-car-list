@@ -4,7 +4,7 @@ import Form from '../components/Form';
 import { carActionCreators } from '../actionCreators';
 import Car from '../models/car';
 
-const AddFormContainer = ({ addCar }) => (
+const AddCarFormContainer = ({ addCar }) => (
     <Form
         car={ new Car() }
         onSubmit={ addCar }
@@ -15,4 +15,4 @@ const mapDispatchToProps = dispatch => ({
     addCar: data => dispatch(carActionCreators.addCar(data))
 });
 
-export default connect(null, mapDispatchToProps)(AddFormContainer);
+export default connect(null, mapDispatchToProps)(AddCarFormContainer);

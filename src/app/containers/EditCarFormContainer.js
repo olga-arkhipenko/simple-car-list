@@ -5,7 +5,7 @@ import Form from '../components/Form';
 import { carActionCreators } from '../actionCreators';
 import Car from '../models/car';
 
-const EditFormContainer = ({ car, editCar }) => (
+const EditCarFormContainer = ({ car, editCar }) => (
     <Form
         car={ car }
         onSubmit={ editCar }
@@ -20,4 +20,4 @@ const mapStateToProps = (state, ownProps) => ({
     car: state.cars.find(car => car.id === ownProps.match.params.id) || new Car()
 });
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(EditFormContainer));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(EditCarFormContainer));

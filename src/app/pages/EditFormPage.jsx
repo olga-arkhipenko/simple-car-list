@@ -1,9 +1,9 @@
 import React from 'react';
-import EditFormContainer from '../containers/EditFormContainer';
+import EditCarFormContainer from '../containers/EditCarFormContainer';
 
 const EditFormPage = () => (
     <main>
-        <EditFormContainer />
+        <EditCarFormContainer />
     </main>
 );
 

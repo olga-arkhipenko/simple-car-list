@@ -1,9 +1,9 @@
 import React from 'react';
-import AddFormContainer from '../containers/AddFormContainer';
+import AddCarFormContainer from '../containers/AddCarFormContainer';
 
 const AddFormPage = () => (
     <main>
-        <AddFormContainer />
+        <AddCarFormContainer />
     </main>
 );
 
