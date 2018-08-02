@@ -20,12 +20,15 @@ class Form extends Component {
     }
 
     handleChange = name => event => {
-        this.setState({
-            car: {
-                ...this.state.car,
-                [ name ]: event.target.value
-            }
-        });
+        const { value } = event.target;
+        this.setState(
+            state => ({
+                car: {
+                    ...state.car,
+                    [ name ]: value
+                }
+            })
+        );
     }
 
     handleChangeBrand = this.handleChange('brand');
