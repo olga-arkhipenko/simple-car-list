@@ -1,9 +1,9 @@
 import React from 'react';
-import EditableTableContainer from '../containers/EditableTableContainer';
+import CarListContainer from '../containers/CarListContainer';
 
 const MainPage = () => (
     <main>
-        <EditableTableContainer />
+        <CarListContainer />
     </main>
 );
 

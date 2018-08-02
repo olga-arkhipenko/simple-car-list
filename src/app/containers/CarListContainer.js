@@ -4,7 +4,7 @@ import EditableTable from '../components/EditableTable';
 import { carActionCreators } from '../actionCreators';
 import tableHeadings from '../constants/tableHeadings';
 
-const EditableTableContainer = ({ cars, deleteCar }) => (
+const CarListContainer = ({ cars, deleteCar }) => (
     <EditableTable
         data={ cars }
         tableHeadings={ tableHeadings }
@@ -20,4 +20,4 @@ const mapDispatchToProps = dispatch => ({
     deleteCar: id => dispatch(carActionCreators.deleteCar(id))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(EditableTableContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(CarListContainer);
