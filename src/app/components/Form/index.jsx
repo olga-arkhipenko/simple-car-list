@@ -3,23 +3,20 @@ import { withRouter } from 'react-router-dom';
 import FormField from '../FormField';
 import FormButton from '../FormButton';
 import routes from '../../constants/routes';
+import getPropertyOrDefault from '../../../utilities/getPropertyOrDefault';
 import './index.css';
 
 class Form extends Component {
     constructor(props) {
+        const carOwnProperties = Object.getOwnPropertyNames(props.car);
+        const getCarPropertyOrDefault = propertyName => getPropertyOrDefault(props.car, car => car[ propertyName ]);
+        const car = carOwnProperties.reduce((resultObject, propertyName) => {
+            resultObject[ propertyName ] = getCarPropertyOrDefault(propertyName);
+            return resultObject;
+        }, {});
+
         super(props);
-        this.state = {
-            car: {
-                id: props.car ? props.car.id : '',
-                brand: props.car ? props.car.brand : '',
-                model: props.car ? props.car.model : '',
-                productionYear: props.car ? props.car.productionYear : '',
-                engineCapacity: props.car ? props.car.engineCapacity : '',
-                enginePower: props.car ? props.car.enginePower : '',
-                price: props.car ? props.car.price : '',
-                owner: props.car ? props.car.owner : ''
-            }
-        };
+        this.state = { car };
     }
 
     handleChange = name => event => {

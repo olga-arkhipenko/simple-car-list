@@ -2,9 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Form from '../components/Form';
 import { carActionCreators } from '../actionCreators';
+import Car from '../models/car';
 
 const AddFormContainer = ({ addCar }) => (
-    <Form onSubmit={ addCar } />
+    <Form
+        car={ new Car() }
+        onSubmit={ addCar }
+    />
 );
 
 const mapDispatchToProps = dispatch => ({

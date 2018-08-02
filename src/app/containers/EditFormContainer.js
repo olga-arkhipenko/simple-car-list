@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import Form from '../components/Form';
 import { carActionCreators } from '../actionCreators';
+import Car from '../models/car';
 
 const EditFormContainer = ({ car, editCar }) => (
     <Form
@@ -16,7 +17,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const mapStateToProps = (state, ownProps) => ({
-    car: state.cars.find(car => car.id === ownProps.match.params.id)
+    car: state.cars.find(car => car.id === ownProps.match.params.id) || new Car()
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(EditFormContainer));
