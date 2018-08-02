@@ -20,8 +20,8 @@ const carReducer = (state = [], action) => {
                 return newState;
             }, []);
         case actionTypes.DELETE_CAR: {
-            const deleteCarId = action.id;
-            return state.filter(car => car.id !== deleteCarId);
+            const deletedCarId = action.id;
+            return state.filter(car => car.id !== deletedCarId);
         }
         default:
             return state;
