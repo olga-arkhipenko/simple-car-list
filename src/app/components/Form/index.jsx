@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import FormField from '../FormField';
 import FormButton from '../FormButton';
 import routes from '../../constants/routes';
-import getPropertyOrDefault from '../../../utilities/getPropertyOrDefault';
+import { getPropertyOrDefault } from '../../../utilities/getPropertyOrDefault';
 import './index.css';
 
 class Form extends Component {
