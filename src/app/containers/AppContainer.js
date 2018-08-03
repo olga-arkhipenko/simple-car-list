@@ -19,7 +19,7 @@ const AppContainer = () => (
         />
         <Route
             exact
-            path={ `${ routes.EDIT_FORM }/:id` }
+            path={ routes.EDIT_FORM }
             component={ EditFormPage }
         />
     </Switch>
