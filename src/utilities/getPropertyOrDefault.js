@@ -1,1 +1,1 @@
-export const getPropertyOrDefault = (object, getter, defaultValue = '') => getter(object) ? getter(object) : defaultValue;
+export const getPropertyOrDefault = (object, getter, defaultValue = '') => getter(object) || defaultValue;
