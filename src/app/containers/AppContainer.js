@@ -5,7 +5,7 @@ import EditFormPage from '../pages/EditFormPage';
 import MainPage from '../pages/MainPage';
 import routes from '../constants/routes';
 
-const Router = () => (
+const AppContainer = () => (
     <Switch>
         <Route
             exact
@@ -25,4 +25,4 @@ const Router = () => (
     </Switch>
 );
 
-export default Router;
+export default AppContainer;
