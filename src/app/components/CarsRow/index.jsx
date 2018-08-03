@@ -1,6 +1,7 @@
 import React from 'react';
 import PageLink from '../PageLink';
 import routes from '../../constants/routes';
+import { getUrlByTemplate } from '../../../utilities/getUrlByTemplate';
 import './index.css';
 
 const CarsRow = ({ car, onDelete }) => {
@@ -14,6 +15,8 @@ const CarsRow = ({ car, onDelete }) => {
         price,
         owner
     } = car;
+
+    const carEditUrl = getUrlByTemplate(routes.EDIT_FORM, { id });
 
     return (
         <tr>
@@ -33,7 +36,7 @@ const CarsRow = ({ car, onDelete }) => {
                 </span>
             </td>
             <td className="edit-table-cell">
-                <PageLink path={ `${ routes.EDIT_FORM }/${ id }` }>
+                <PageLink path={ carEditUrl }>
                     <span className="edit-table-cell__icon edit-table-cell__icon-pen">
                         &#9998;
                     </span>
