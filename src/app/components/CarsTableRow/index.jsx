@@ -4,7 +4,7 @@ import routes from '../../constants/routes';
 import { getUrlByTemplate } from '../../../utilities/getUrlByTemplate';
 import './index.css';
 
-const CarsRow = ({ car, onDelete }) => {
+const CarsTableRow = ({ car, onDelete }) => {
     const {
         id,
         brand,
@@ -46,4 +46,4 @@ const CarsRow = ({ car, onDelete }) => {
     );
 };
 
-export default CarsRow;
+export default CarsTableRow;
