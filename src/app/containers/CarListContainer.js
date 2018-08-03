@@ -1,13 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import EditableTable from '../components/EditableTable';
+import CarsTable from '../components/CarsTable';
 import { carActionCreators } from '../actionCreators';
-import tableHeadings from '../constants/tableHeadings';
 
 const CarListContainer = ({ cars, deleteCar }) => (
-    <EditableTable
-        data={ cars }
-        tableHeadings={ tableHeadings }
+    <CarsTable
+        cars={ cars }
         onDelete={ deleteCar }
     />
 );

@@ -1,26 +1,15 @@
 import React from 'react';
 import './index.css';
-import TableHeading from '../TableHeading';
-import CarsRow from '../CarsRow';
+// import CarsTableHeading from '../CarsTableHeading';
+// import CarsTableRow from '../CarsTableRow';
 
-const Table = ({ data, headings, onDelete }) => {
-    const tableBody = data.map(item => (
-        <CarsRow
-            key={ item.id }
-            car={ item }
-            onDelete={ onDelete }
-        />
-    ));
-
-    return (
-        <table className="table">
-            <caption className="table__caption"> List of all cars </caption>
-            <TableHeading headings={ headings } />
-            <tbody>
-                { tableBody }
-            </tbody>
-        </table>
-    );
-};
-
+const Table = ({ tableHeading, tableBody }) => (
+    <table className="table">
+        <caption className="table__caption"> List of all cars </caption>
+        { tableHeading }
+        <tbody>
+            { tableBody }
+        </tbody>
+    </table>
+);
 export default Table;

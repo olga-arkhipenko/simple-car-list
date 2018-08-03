@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './index.css';
 
 const TableHeading = ({ headings }) => {
@@ -20,8 +19,8 @@ const TableHeading = ({ headings }) => {
     );
 };
 
-TableHeading.propTypes = {
-    headings: PropTypes.arrayOf(PropTypes.string)
-};
+// TableHeading.propTypes = {
+//     headings: PropTypes.arrayOf(PropTypes.string)
+// };
 
 export default TableHeading;
