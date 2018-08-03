@@ -1,8 +1,8 @@
 import { Switch, Route } from 'react-router-dom';
 import React from 'react';
-import AddFormPage from '../pages/AddFormPage';
-import EditFormPage from '../pages/EditFormPage';
-import MainPage from '../pages/MainPage';
+import AddFormPage from '../components/pages/AddFormPage';
+import EditFormPage from '../components/pages/EditFormPage';
+import MainPage from '../components/pages/MainPage';
 import routes from '../constants/routes';
 
 const AppContainer = () => (

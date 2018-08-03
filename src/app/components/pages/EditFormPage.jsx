@@ -1,5 +1,5 @@
 import React from 'react';
-import EditCarFormContainer from '../containers/EditCarFormContainer';
+import EditCarFormContainer from '../../containers/EditCarFormContainer';
 
 const EditFormPage = () => (
     <main>
