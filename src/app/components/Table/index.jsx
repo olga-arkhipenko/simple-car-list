@@ -1,7 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './index.css';
-// import CarsTableHeading from '../CarsTableHeading';
-// import CarsTableRow from '../CarsTableRow';
 
 const Table = ({ tableHeading, tableBody }) => (
     <table className="table">
@@ -12,4 +11,10 @@ const Table = ({ tableHeading, tableBody }) => (
         </tbody>
     </table>
 );
+
+Table.propTypes = {
+    tableHeading: PropTypes.element,
+    tableBody: PropTypes.arrayOf(PropTypes.element)
+};
+
 export default Table;

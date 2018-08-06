@@ -1,8 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Table from '../Table';
 import TableHeading from '../TableHeading';
 import CarsTableRow from '../CarsTableRow';
 import PageLink from '../PageLink';
+import Car from '../../models/car';
 import routes from '../../constants/routes';
 import tableHeadings from '../../constants/tableHeadings';
 import './index.css';
@@ -29,6 +31,11 @@ const CarsTable = ({ cars, onDelete }) => {
             </PageLink>
         </div>
     );
+};
+
+CarsTable.propTypes = {
+    cars: PropTypes.arrayOf(PropTypes.instanceOf(Car)),
+    onDelete: PropTypes.func
 };
 
 export default CarsTable;

@@ -10,13 +10,10 @@ const carActionCreators = {
         };
     },
 
-    editCar: data => {
-        const car = carMapper.mapToCar(data);
-        return {
-            type: actionTypes.EDIT_CAR,
-            car
-        };
-    },
+    editCar: car => ({
+        type: actionTypes.EDIT_CAR,
+        car
+    }),
 
     deleteCar: id => ({
         type: actionTypes.DELETE_CAR,

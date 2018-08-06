@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import Form from '../components/Form';
@@ -11,6 +12,11 @@ const EditCarFormContainer = ({ car, editCar }) => (
         onSubmit={ editCar }
     />
 );
+
+EditCarFormContainer.propTypes = {
+    car: PropTypes.instanceOf(Car),
+    editCar: PropTypes.func
+};
 
 const mapDispatchToProps = dispatch => ({
     editCar: data => dispatch(carsActionCreators.editCar(data))

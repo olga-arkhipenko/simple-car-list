@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './index.css';
 
 const FormField = ({ name, type, value, onChange }) => {
@@ -19,6 +20,19 @@ const FormField = ({ name, type, value, onChange }) => {
             />
         </div>
     );
+};
+
+FormField.propTypes = {
+    name: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
+    ]),
+    type: PropTypes.string,
+    value: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
+    ]),
+    onChange: PropTypes.func
 };
 
 export default FormField;

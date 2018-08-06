@@ -1,4 +1,5 @@
 import actionTypes from '../constants/actionTypes';
+import carMapper from '../mappers/carMapper';
 
 const carReducer = (state = [], action) => {
     const newCar = action.car;
@@ -12,7 +13,7 @@ const carReducer = (state = [], action) => {
         case actionTypes.EDIT_CAR:
             return state.reduce((newState, currentCar) => {
                 if (currentCar.id === newCar.id) {
-                    const newCurrentCar = { ...currentCar, ...newCar };
+                    const newCurrentCar = carMapper.mapToCar({ ...currentCar, ...newCar });
                     newState.push(newCurrentCar);
                     return newState;
                 }
