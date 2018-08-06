@@ -1,18 +1,22 @@
-import actionTypes from '../constants/actionTypes';
 import { zipObjects } from '../../utilities/zipObjects';
+import carMapper from '../../app/mappers/carMapper';
+
+
+const ADD_CAR = 'simple-cars-list/carsList/ADD_CAR';
+const EDIT_CAR = 'simple-cars-list/carsList/EDIT_CAR';
+const DELETE_CAR = 'simple-cars-list/carsList/DELETE_CAR';
 
 const initialState = [];
 
-const carReducer = (state = initialState, action) => {
+export default function reducer(state = initialState, action) {
     const newCar = action.car;
-
     switch (action.type) {
-        case actionTypes.ADD_CAR:
+        case ADD_CAR:
             return [
                 ...state,
                 newCar
             ];
-        case actionTypes.EDIT_CAR:
+        case EDIT_CAR:
             return state.map(currentCar => {
                 if (currentCar.id === newCar.id) {
                     Object.keys(newCar).forEach(property => {
@@ -23,13 +27,31 @@ const carReducer = (state = initialState, action) => {
                 }
                 return currentCar;
             });
-        case actionTypes.DELETE_CAR: {
+        case DELETE_CAR: {
             const deletedCarId = action.id;
             return state.filter(car => car.id !== deletedCarId);
         }
         default:
             return state;
     }
-};
+}
 
-export default carReducer;
+export const carsActionCreators = {
+    addCar: data => {
+        const car = carMapper.mapToCar(data);
+        return {
+            type: ADD_CAR,
+            car
+        };
+    },
+
+    editCar: car => ({
+        type: EDIT_CAR,
+        car
+    }),
+
+    deleteCar: id => ({
+        type: DELETE_CAR,
+        id
+    })
+};
