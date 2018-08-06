@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import CarsTable from '../components/CarsTable';
-import { carActionCreators } from '../actionCreators';
+import { carsActionCreators } from '../actionCreators';
 
 const CarListContainer = ({ cars, deleteCar }) => (
     <CarsTable
@@ -15,7 +15,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    deleteCar: id => dispatch(carActionCreators.deleteCar(id))
+    deleteCar: id => dispatch(carsActionCreators.deleteCar(id))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CarListContainer);

@@ -1,3 +1,3 @@
-import carActionCreators from './carActionCreators';
+import carsActionCreators from './carsActionCreators';
 
-export { carActionCreators };
+export { carsActionCreators };

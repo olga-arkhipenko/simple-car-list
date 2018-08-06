@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import Form from '../components/Form';
-import { carActionCreators } from '../actionCreators';
+import { carsActionCreators } from '../actionCreators';
 import Car from '../models/car';
 
 const EditCarFormContainer = ({ car, editCar }) => (
@@ -13,7 +13,7 @@ const EditCarFormContainer = ({ car, editCar }) => (
 );
 
 const mapDispatchToProps = dispatch => ({
-    editCar: data => dispatch(carActionCreators.editCar(data))
+    editCar: data => dispatch(carsActionCreators.editCar(data))
 });
 
 const mapStateToProps = (state, ownProps) => ({
