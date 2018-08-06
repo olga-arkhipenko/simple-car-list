@@ -24,7 +24,7 @@ TableHeading.propTypes = {
     headings: PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.string),
         PropTypes.arrayOf(PropTypes.number)
-    ])
+    ]).isRequired
 };
 
 export default TableHeading;

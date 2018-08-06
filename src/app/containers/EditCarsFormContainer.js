@@ -14,8 +14,8 @@ const EditCarsFormContainer = ({ car, editCar }) => (
 );
 
 EditCarsFormContainer.propTypes = {
-    car: PropTypes.instanceOf(Car),
-    editCar: PropTypes.func
+    car: PropTypes.instanceOf(Car).isRequired,
+    editCar: PropTypes.func.isRequired
 };
 
 const mapDispatchToProps = dispatch => ({

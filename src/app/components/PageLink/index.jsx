@@ -17,7 +17,7 @@ PageLink.propTypes = {
         PropTypes.arrayOf(PropTypes.node),
         PropTypes.node
     ]),
-    path: PropTypes.string,
+    path: PropTypes.string.isRequired,
     type: PropTypes.string
 };
 

@@ -16,9 +16,9 @@ FormButton.propTypes = {
         PropTypes.string,
         PropTypes.number
     ]),
-    type: PropTypes.string,
+    type: PropTypes.string.isRequired,
     design: PropTypes.string,
-    onClick: PropTypes.func
+    onClick: PropTypes.func.isRequired
 };
 
 export default FormButton;

@@ -13,7 +13,7 @@ const AddCarsFormContainer = ({ addCar }) => (
 );
 
 AddCarsFormContainer.propTypes = {
-    addCar: PropTypes.func
+    addCar: PropTypes.func.isRequired
 };
 
 const mapDispatchToProps = dispatch => ({

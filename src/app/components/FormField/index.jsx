@@ -27,12 +27,12 @@ FormField.propTypes = {
         PropTypes.string,
         PropTypes.number
     ]),
-    type: PropTypes.string,
+    type: PropTypes.string.isRequired,
     value: PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.number
     ]),
-    onChange: PropTypes.func
+    onChange: PropTypes.func.isRequired
 };
 
 export default FormField;

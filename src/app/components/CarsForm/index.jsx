@@ -11,8 +11,8 @@ import './index.css';
 
 class CarsForm extends Component {
     static propTypes = {
-        car: PropTypes.instanceOf(Car),
-        onSubmit: PropTypes.func,
+        car: PropTypes.instanceOf(Car).isRequired,
+        onSubmit: PropTypes.func.isRequired,
         history: ReactRouterPropTypes.history.isRequired
     }
 

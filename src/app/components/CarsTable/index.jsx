@@ -34,8 +34,8 @@ const CarsTable = ({ cars, onDelete }) => {
 };
 
 CarsTable.propTypes = {
-    cars: PropTypes.arrayOf(PropTypes.instanceOf(Car)),
-    onDelete: PropTypes.func
+    cars: PropTypes.arrayOf(PropTypes.instanceOf(Car)).isRequired,
+    onDelete: PropTypes.func.isRequired
 };
 
 export default CarsTable;

@@ -13,8 +13,8 @@ const CarsListContainer = ({ cars, deleteCar }) => (
 );
 
 CarsListContainer.propTypes = {
-    cars: PropTypes.arrayOf(PropTypes.instanceOf(Car)),
-    deleteCar: PropTypes.func
+    cars: PropTypes.arrayOf(PropTypes.instanceOf(Car)).isRequired,
+    deleteCar: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({
