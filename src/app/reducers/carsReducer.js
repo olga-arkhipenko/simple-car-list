@@ -1,7 +1,9 @@
 import actionTypes from '../constants/actionTypes';
-import carMapper from '../mappers/carMapper';
+import { zipObjects } from '../../utilities/zipObjects';
 
-const carReducer = (state = [], action) => {
+const initialState = [];
+
+const carReducer = (state = initialState, action) => {
     const newCar = action.car;
 
     switch (action.type) {
@@ -11,15 +13,16 @@ const carReducer = (state = [], action) => {
                 newCar
             ];
         case actionTypes.EDIT_CAR:
-            return state.reduce((newState, currentCar) => {
+            return state.map(currentCar => {
                 if (currentCar.id === newCar.id) {
-                    const newCurrentCar = carMapper.mapToCar({ ...currentCar, ...newCar });
-                    newState.push(newCurrentCar);
-                    return newState;
+                    Object.keys(newCar).forEach(property => {
+                        if (currentCar[ property ] !== newCar[ property ]) {
+                            zipObjects(currentCar, newCar);
+                        }
+                    });
                 }
-                newState.push(currentCar);
-                return newState;
-            }, []);
+                return currentCar;
+            });
         case actionTypes.DELETE_CAR: {
             const deletedCarId = action.id;
             return state.filter(car => car.id !== deletedCarId);
