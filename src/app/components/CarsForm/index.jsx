@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import ReactRouterPropTypes from 'react-router-prop-types';
 import { withRouter } from 'react-router-dom';
 import Car from '../../models/car';
 import FormField from '../FormField';
@@ -11,7 +12,8 @@ import './index.css';
 class CarsForm extends Component {
     static propTypes = {
         car: PropTypes.instanceOf(Car),
-        onSubmit: PropTypes.func
+        onSubmit: PropTypes.func,
+        history: ReactRouterPropTypes.history.isRequired
     }
 
     constructor(props) {
