@@ -8,7 +8,7 @@ import routes from '../../constants/routes';
 import { getPropertyOrDefault } from '../../../utilities/getPropertyOrDefault';
 import './index.css';
 
-class Form extends Component {
+class CarsForm extends Component {
     static propTypes = {
         car: PropTypes.instanceOf(Car),
         onSubmit: PropTypes.func
@@ -151,4 +151,4 @@ class Form extends Component {
     }
 }
 
-export default withRouter(Form);
+export default withRouter(CarsForm);
