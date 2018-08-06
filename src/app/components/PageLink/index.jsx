@@ -1,16 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import './index.css';
 
-const PageLink = ({ children, path, type }) => (
-    <Link
-        to={ path }
-        className={ `link ${ type || '' }` }
-    >
-        { children }
-    </Link>
-);
+const PageLink = ({ children, path, type }) => {
+    const className = classNames('link', type);
+
+    return (
+        <Link
+            to={ path }
+            className={ className }
+        >
+            { children }
+        </Link>
+    );
+};
 
 PageLink.propTypes = {
     children: PropTypes.oneOfType([
