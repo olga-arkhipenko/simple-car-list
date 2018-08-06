@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import CarsTable from '../components/CarsTable';
 import Car from '../models/car';
-import { carsActionCreators } from '../actionCreators';
+import { carsActionCreators } from '../../redux/modules/carsList';
 
 const CarsListContainer = ({ cars, deleteCar }) => (
     <CarsTable
@@ -21,8 +21,8 @@ const mapStateToProps = state => ({
     cars: state.cars
 });
 
-const mapDispatchToProps = () => ({
-    deleteCar: id => carsActionCreators.deleteCar(id)
-});
+const mapDispatchToProps = {
+    deleteCar: carsActionCreators.deleteCar
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(CarsListContainer);

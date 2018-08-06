@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import CarsForm from '../components/CarsForm';
-import { carsActionCreators } from '../actionCreators';
+import { carsActionCreators } from '../../redux/modules/carsList';
 import Car from '../models/car';
 
 const AddCarsFormContainer = ({ addCar }) => (
@@ -16,8 +16,8 @@ AddCarsFormContainer.propTypes = {
     addCar: PropTypes.func.isRequired
 };
 
-const mapDispatchToProps = () => ({
-    addCar: data => carsActionCreators.addCar(data)
-});
+const mapDispatchToProps = {
+    addCar: carsActionCreators.addCar
+};
 
 export default connect(null, mapDispatchToProps)(AddCarsFormContainer);

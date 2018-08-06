@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import CarsForm from '../components/CarsForm';
-import { carsActionCreators } from '../actionCreators';
+import { carsActionCreators } from '../../redux/modules/carsList';
 import Car from '../models/car';
 
 const EditCarsFormContainer = ({ car, editCar }) => (
@@ -18,12 +18,12 @@ EditCarsFormContainer.propTypes = {
     editCar: PropTypes.func.isRequired
 };
 
-const mapDispatchToProps = () => ({
-    editCar: data => carsActionCreators.editCar(data)
-});
-
 const mapStateToProps = (state, ownProps) => ({
     car: state.cars.find(car => car.id === ownProps.match.params.id) || new Car()
 });
+
+const mapDispatchToProps = {
+    editCar: carsActionCreators.editCar
+};
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(EditCarsFormContainer));
