@@ -1,14 +1,12 @@
 import { zipObjects } from '../../utilities/zipObjects';
 import carMapper from '../../app/mappers/carMapper';
 
-
 const ADD_CAR = 'simple-cars-list/carsList/ADD_CAR';
 const EDIT_CAR = 'simple-cars-list/carsList/EDIT_CAR';
 const DELETE_CAR = 'simple-cars-list/carsList/DELETE_CAR';
 
-const initialState = [];
 
-export default function reducer(state = initialState, action) {
+const carsListReducer = (state = [], action) => {
     const newCar = action.car;
     switch (action.type) {
         case ADD_CAR:
@@ -34,9 +32,9 @@ export default function reducer(state = initialState, action) {
         default:
             return state;
     }
-}
+};
 
-export const carsActionCreators = {
+const carsActionCreators = {
     addCar: data => {
         const car = carMapper.mapToCar(data);
         return {
@@ -55,3 +53,6 @@ export const carsActionCreators = {
         id
     })
 };
+
+export default carsListReducer;
+export { carsActionCreators };
