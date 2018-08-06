@@ -2,18 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import Form from '../components/Form';
+import CarsForm from '../components/CarsForm';
 import { carsActionCreators } from '../actionCreators';
 import Car from '../models/car';
 
-const EditCarFormContainer = ({ car, editCar }) => (
-    <Form
+const EditCarsFormContainer = ({ car, editCar }) => (
+    <CarsForm
         car={ car }
         onSubmit={ editCar }
     />
 );
 
-EditCarFormContainer.propTypes = {
+EditCarsFormContainer.propTypes = {
     car: PropTypes.instanceOf(Car),
     editCar: PropTypes.func
 };
@@ -26,4 +26,4 @@ const mapStateToProps = (state, ownProps) => ({
     car: state.cars.find(car => car.id === ownProps.match.params.id) || new Car()
 });
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(EditCarFormContainer));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(EditCarsFormContainer));
