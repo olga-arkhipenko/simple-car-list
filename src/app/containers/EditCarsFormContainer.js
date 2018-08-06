@@ -18,8 +18,8 @@ EditCarsFormContainer.propTypes = {
     editCar: PropTypes.func.isRequired
 };
 
-const mapDispatchToProps = dispatch => ({
-    editCar: data => dispatch(carsActionCreators.editCar(data))
+const mapDispatchToProps = () => ({
+    editCar: data => carsActionCreators.editCar(data)
 });
 
 const mapStateToProps = (state, ownProps) => ({

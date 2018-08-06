@@ -16,8 +16,8 @@ AddCarsFormContainer.propTypes = {
     addCar: PropTypes.func.isRequired
 };
 
-const mapDispatchToProps = dispatch => ({
-    addCar: data => dispatch(carsActionCreators.addCar(data))
+const mapDispatchToProps = () => ({
+    addCar: data => carsActionCreators.addCar(data)
 });
 
 export default connect(null, mapDispatchToProps)(AddCarsFormContainer);

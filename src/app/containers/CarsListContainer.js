@@ -21,8 +21,8 @@ const mapStateToProps = state => ({
     cars: state.cars
 });
 
-const mapDispatchToProps = dispatch => ({
-    deleteCar: id => dispatch(carsActionCreators.deleteCar(id))
+const mapDispatchToProps = () => ({
+    deleteCar: id => carsActionCreators.deleteCar(id)
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CarsListContainer);
