@@ -1,9 +1,9 @@
 import React from 'react';
-import CarListContainer from '../../containers/CarListContainer';
+import CarsListContainer from '../../containers/CarsListContainer';
 
 const MainPage = () => (
     <main>
-        <CarListContainer />
+        <CarsListContainer />
     </main>
 );
 
