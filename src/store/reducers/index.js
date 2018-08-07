@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import carsReducer from './cars';
-import weatherDataReducer from './weatherWidget';
+import weatherWidgetReducer from './weatherWidget';
 
 const rootReducer = combineReducers({
     cars: carsReducer,
-    weatherData: weatherDataReducer
+    weatherWidget: weatherWidgetReducer
 });
 
 export default rootReducer;

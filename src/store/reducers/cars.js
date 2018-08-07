@@ -1,9 +1,9 @@
 import { zipObjects } from '../../utilities/zipObjects';
 import carMapper from '../../app/mappers/carMapper';
 
-const ADD_CAR = 'simple-cars-list/carsList/ADD_CAR';
-const EDIT_CAR = 'simple-cars-list/carsList/EDIT_CAR';
-const DELETE_CAR = 'simple-cars-list/carsList/DELETE_CAR';
+const ADD_CAR = 'simple-cars-list/cars/ADD_CAR';
+const EDIT_CAR = 'simple-cars-list/cars/EDIT_CAR';
+const DELETE_CAR = 'simple-cars-list/cars/DELETE_CAR';
 
 const carsReducer = (state = [], action) => {
     const newCar = action.car;
