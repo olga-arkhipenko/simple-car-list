@@ -5,7 +5,7 @@ const ADD_CAR = 'simple-cars-list/carsList/ADD_CAR';
 const EDIT_CAR = 'simple-cars-list/carsList/EDIT_CAR';
 const DELETE_CAR = 'simple-cars-list/carsList/DELETE_CAR';
 
-const carsListReducer = (state = [], action) => {
+const carsReducer = (state = [], action) => {
     const newCar = action.car;
     switch (action.type) {
         case ADD_CAR:
@@ -53,5 +53,5 @@ const carsActionCreators = {
     })
 };
 
-export default carsListReducer;
+export default carsReducer;
 export { carsActionCreators };
