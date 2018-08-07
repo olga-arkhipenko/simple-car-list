@@ -5,12 +5,12 @@ import './index.css';
 class WeatherWidget extends Component {
     // constructor(props) {
     //     super(props);
-    // this.state = {
-    //     isCoverHidden: false
-    // };
     // }
 
-    hideCover = () => console.log('hello')
+    hideCover = () => {
+        console.log('hello');
+        this.props.ftch();
+    }
 
     render() {
         return (
