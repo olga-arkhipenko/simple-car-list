@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import CarsTable from '../components/CarsTable';
 import Car from '../models/car';
-import { carsActionCreators } from '../../store/reducers/carsList';
+import { carsActionCreators } from '../../store/reducers/cars';
 
 const CarsListContainer = ({ cars, deleteCar }) => (
     <CarsTable

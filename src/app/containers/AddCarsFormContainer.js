@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import CarsForm from '../components/CarsForm';
-import { carsActionCreators } from '../../store/reducers/carsList';
+import { carsActionCreators } from '../../store/reducers/cars';
 import Car from '../models/car';
 
 const AddCarsFormContainer = ({ addCar }) => (

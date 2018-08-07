@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import CarsForm from '../components/CarsForm';
-import { carsActionCreators } from '../../store/reducers/carsList';
+import { carsActionCreators } from '../../store/reducers/cars';
 import Car from '../models/car';
 
 const EditCarsFormContainer = ({ car, editCar }) => (
