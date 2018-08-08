@@ -1,0 +1,22 @@
+.widget-cover {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 250px;
+    height: 320px;
+
+    content: "";
+    cursor: pointer;
+    /* background-image: url("./images/cover.png"); */
+
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.widget-cover:hover {
+    /* background-image: url("./images/coverHovered.png"); */
+    background-color: blueviolet;
+}
