@@ -1,3 +1,4 @@
+import ajaxHelper from '../../../helpers/ajaxHelper';
 import { buildUrl } from '../../../utilities/buildUrl';
 import { getCurrentPosition } from '../../../utilities/getCurrentPosition';
 import { URL, URL_PREFIX, URL_SEGMENT, API_KEY } from '../api/constants';
@@ -14,7 +15,8 @@ const weatherWidgetService = {
                 lat: coords.latitude,
                 key: API_KEY
             }))
-            .then(p => console.log(p));
+            .then(url => ajaxHelper.get(url))
+            .then(data => console.log(data));
     }
 };
 

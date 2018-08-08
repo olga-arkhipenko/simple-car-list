@@ -7,7 +7,7 @@ const App = () => (
     <div className="App">
         <Header />
         <AppContainer />
-        <WeatherWidgetContainer/>
+        <WeatherWidgetContainer />
     </div>
 );
 
