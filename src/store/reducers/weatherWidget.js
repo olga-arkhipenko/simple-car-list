@@ -51,11 +51,10 @@ const weatherWidgetActionCreators = {
 const weatherWidgetAsyncActionCreators = {
     fetchWeatherData: () => dispatch => {
         dispatch(weatherWidgetActionCreators.requestWeatherData());
-        return weatherWidgetService.fetchWeatherData();
-        // return fetch('https://api.weatherbit.io/v2.0/current?lat=53.893&lon=%2027.538&key=e4af734f1fc543bfad976e64a576cff8')
-        //     .then(response => response.json())
-        // .then(weatherData => dispatch(weatherWidgetActionCreators.receiveWeatherData(weatherData)))
-        // .catch(() => dispatch(weatherWidgetActionCreators.failedToFetch()));
+        return weatherWidgetService
+            .fetchWeatherData()
+            .then(weatherData => dispatch(weatherWidgetActionCreators.receiveWeatherData(weatherData)))
+            .catch(() => dispatch(weatherWidgetActionCreators.failedToFetch()));
     }
 };
 
