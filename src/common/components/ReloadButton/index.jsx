@@ -12,7 +12,7 @@ const ReloadButton = ({ type, onClick }) => {
             className={ className }
             onClick={ onClick }
         >
-        &#8634;
+        &#128472;
         </button>
     );
 };
