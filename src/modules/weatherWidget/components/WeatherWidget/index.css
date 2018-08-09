@@ -1,8 +1,70 @@
 .widget {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
 
-    width: 250px;
-    height: 320px;
+.widget--day {
+    color: #083045;
+    border: 2px solid #083045;
+}
+
+.widget--night {
+    color: #ffffff;
+    background-color: #083045;
+}
+
+.widget__header {
+    display: flex;
+
+    margin: 0 0 10px;
+
+    word-wrap: break-word;
+    word-break: break-all;
+    hyphens: manual;
+
+    justify-content: space-between;
+    line-break: loose;
+    overflow-wrap: break-word;
+}
+
+.widget__image {
+    height: 110px;
+}
+
+.wiget__main-properties {
+    display: flex;
+    flex-direction: column;
+}
+
+.widget__main-property {
+    margin: 0 0 5px;
+
+    font-family: "Roboto", sans-serif;
+}
+
+.widget__property {
+    margin: 0 8px 0;
+    padding: 5px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+}
+
+.widget__property-value {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.widget__main-property--city {
+    font-size: 2.3rem;
+}
+
+.widget__main-property--description {
+    font-style: italic;
+}
+
+.widget__main-property--temperature {
+    font-size: 2rem;
 }
