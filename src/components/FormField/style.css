@@ -1,0 +1,28 @@
+.form-field {
+    font-family: "Open Sans", sans-serif;
+}
+
+.form-field__name {
+    margin: 18px 0;
+
+    color: #083145;
+
+    font-size: 1.2rem;
+}
+
+.form-field__input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+
+    color: #39596a;
+    border: 2px solid #cdd5d9;
+
+    font-size: 1.1rem;
+}
+
+.form-field__input::placeholder {
+    color: #a9b6c5;
+
+    font-weight: 200;
+}

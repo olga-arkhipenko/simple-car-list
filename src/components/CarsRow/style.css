@@ -1,0 +1,40 @@
+.table-cell {
+    padding: 14px 25px;
+
+    text-align: center;
+
+    color: #093a3e;
+    border: 5px solid #ffffff;
+    background-color: #f6f9fe;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+}
+
+.edit-table-cell {
+    padding: 15px 15px;
+
+    text-align: center;
+}
+
+.edit-table-cell__icon {
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.edit-table-cell__icon-trash {
+    color: #c42112;
+}
+
+.edit-table-cell__icon-pen {
+    color: #083045;
+}
+
+.table-cell--first {
+    border-left: none;
+}
+
+.table-cell--last {
+    border-right: none;
+}

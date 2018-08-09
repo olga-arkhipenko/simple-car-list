@@ -1,0 +1,15 @@
+.table {
+    margin: 0 auto 60px;
+
+    border-collapse: collapse;
+
+    font-family: "Open Sans", sans-serif;
+}
+
+.table__caption {
+    margin: 20px 0;
+
+    color: #093a3e;
+
+    font-size: 1.8rem;
+}

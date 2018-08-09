@@ -1,0 +1,18 @@
+.link {
+    text-decoration: none;
+
+    color: inherit;
+
+    font-family: "Open Sans", sans-serif;
+}
+
+.adding-link {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    color: #edf3fd;
+    background-color: #083045;
+
+    font-size: 1.2rem;
+}

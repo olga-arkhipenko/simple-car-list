@@ -1,0 +1,23 @@
+.table-heading {
+    border-collapse: collapse;
+
+    color: #093a3e;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+}
+
+.table-heading__cell {
+    padding: 14px 25px;
+
+    border: 5px solid #ffffff;
+    background-color: #d0daea;
+}
+
+.table-heading__cell:first-child {
+    border-left: none;
+}
+
+.table-heading__cell:last-child {
+    border-right: none;
+}

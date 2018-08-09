@@ -1,0 +1,15 @@
+.form {
+    max-width: 420px;
+    margin: 120px auto;
+    padding: 20px 40px 30px;
+
+    border: 3px solid #eed368;
+}
+
+.form__actions {
+    display: flex;
+
+    margin: 40px 0 6px;
+
+    justify-content: space-around;
+}
