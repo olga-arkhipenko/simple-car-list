@@ -14,7 +14,7 @@ const WeatherWidget = ({ weatherData }) => (
         <p>{weatherData.weatherDescription}</p>
         <p>{weatherData.dayPart}</p>
         <p>{weatherData.sunsetTime}</p>
-        <p>{weatherData.iconCode}</p>
+        <img src={ weatherData.iconUrl } alt="Weather icon." />
     </div>
 );
 
