@@ -1,4 +1,6 @@
 import WeatherData from '../models/weatherData';
+import { buildUrl } from '../../../common/utilities/buildUrl';
+import { IMAGE_HOST } from './constants';
 
 const weatherDataMapper = {
     mapToWeatherData(data) {
@@ -11,7 +13,8 @@ const weatherDataMapper = {
             clouds,
             weather,
             pod,
-            sunset
+            sunset,
+            sunrise
         } = data.data[ 0 ];
 
         const weatherData = new WeatherData();
@@ -22,9 +25,11 @@ const weatherDataMapper = {
         weatherData.humidityPersentage = rh;
         weatherData.cloudCoveragePersentage = clouds;
         weatherData.weatherDescription = weather.description;
-        weatherData.dayPart = pod;
+        weatherData.isDay = pod === 'd';
         weatherData.sunsetTime = sunset;
-        weatherData.iconCode = weather.icon;
+        weatherData.sunriseTime = sunrise;
+        weatherData.iconUrl = buildUrl(IMAGE_HOST, null, `/${ weather.icon }.png`);
+
         return weatherData;
     }
 };

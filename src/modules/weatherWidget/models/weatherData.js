@@ -13,11 +13,13 @@ class WeatherData {
 
     weatherDescription = null;
 
-    dayPart = null;
+    isDay = null;
 
     sunsetTime = null;
 
-    iconCode = null;
+    sunriseTime = null;
+
+    iconUrl = null;
 }
 
 export default WeatherData;
