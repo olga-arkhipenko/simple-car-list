@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import WeatherData from '../../models/weatherData';
+import ReloadButton from '../../../../common/components/ReloadButton';
 import './index.css';
 
-const WeatherWidget = ({ weatherData }) => {
+const WeatherWidget = ({ weatherData, reloadWidget }) => {
     const className = classNames('widget', { 'widget--day': weatherData.isDay, 'widget--night': !weatherData.isDay });
     return (
         <div className={ className }>
@@ -46,13 +47,14 @@ const WeatherWidget = ({ weatherData }) => {
                     { weatherData.sunriseTime }
                 </span>
             </p>
-
+            <ReloadButton type="widget__reload-button" onClick={ reloadWidget } />
         </div>
     );
 };
 
 WeatherWidget.propTypes = {
-    weatherData: PropTypes.instanceOf(WeatherData)
+    weatherData: PropTypes.instanceOf(WeatherData),
+    reloadWidget: PropTypes.func
 };
 
 export default WeatherWidget;

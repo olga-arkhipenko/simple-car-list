@@ -10,7 +10,7 @@ import './index.css';
 const WeatherWidgetWrapper = ({ weatherData, isFetching, fetchWeatherData }) => (
     <div className="widget-wrapper">
         { hasPropertyValues(weatherData)
-            ? <WeatherWidget weatherData={ weatherData } />
+            ? <WeatherWidget weatherData={ weatherData } reloadWidget={ fetchWeatherData } />
             : isFetching
                 ? <Spinner type="widget__spinner" />
                 : <WeatherWidgetCover onClick={ fetchWeatherData } />
