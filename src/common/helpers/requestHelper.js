@@ -1,4 +1,6 @@
-export default {
+/* eslint-disable no-undef */
+
+const requestHelper = {
     sendRequest(url, method = 'get', data) {
         const options = {
             method
@@ -24,3 +26,5 @@ export default {
         return fetch(url, options);
     }
 };
+
+export default requestHelper;

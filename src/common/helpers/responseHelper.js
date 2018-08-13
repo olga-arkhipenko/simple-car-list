@@ -1,4 +1,6 @@
-export default {
+/* eslint-disable func-names */
+
+const responseHelper = {
     getResponse(promise) {
         return promise
             .then(response => (response.ok
@@ -6,3 +8,5 @@ export default {
                 : (function () { throw new Error(response.statusText); }())));
     }
 };
+
+export default responseHelper;
