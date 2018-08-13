@@ -27,7 +27,7 @@ module.exports = env => {
                     loader: 'eslint-loader'
                 },
                 {
-                    test: /\.(png|css)$/,
+                    test: /\.css$/,
                     use: [ 'style-loader', 'css-loader' ]
                 },
                 {
@@ -53,7 +53,7 @@ module.exports = env => {
     };
 
     if (isProductionBuild) {
-        // config.devtool = '#source-map';
+        config.devtool = '#source-map';
         config.plugins = (config.plugins || []).concat([
             new webpack.DefinePlugin({
                 'process.env': {
