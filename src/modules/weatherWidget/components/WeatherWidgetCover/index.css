@@ -7,12 +7,14 @@
     content: "";
     cursor: pointer;
 
-    background-image: url("./images/cover.png");
+    /* background-image: url("/src/images/cover.png"); */
+    background-color: aquamarine;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .widget-cover:hover {
-    background-image: url("./images/coverHovered.png");
+    /* background-image: url("./images/coverHovered.png"); */
+    background-color: yellow;
 }
