@@ -21,6 +21,9 @@ class CarsForm extends Component {
 
         this.carPropertyNames = Object.getOwnPropertyNames(props.car);
         const getCarPropertyOrDefault = propertyName => getPropertyOrDefault(props.car, car => car[ propertyName ]);
+
+        /* eslint-disable no-param-reassign */
+
         const car = this.carPropertyNames.reduce((result, propertyName) => {
             result[ propertyName ] = getCarPropertyOrDefault(propertyName);
             return result;

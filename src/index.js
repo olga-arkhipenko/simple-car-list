@@ -7,6 +7,8 @@ import configureStore from './store';
 
 const store = configureStore();
 
+/* eslint-disable no-undef */
+
 ReactDOM.render(
     <Provider store={ store }>
         <BrowserRouter>
