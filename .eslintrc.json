@@ -12,6 +12,13 @@
         "sourceType": "module"
         }
     },
+    "settings": {
+        "import/resolver": {
+            "webpack": {
+                "config": "webpack.config.js"
+            }
+        }
+    },
     "rules": {
         "arrow-parens": ["error", "as-needed" ],
         "space-in-parens": ["warn", "never" ],
