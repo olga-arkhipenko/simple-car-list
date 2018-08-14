@@ -37,6 +37,12 @@ module.exports = env => {
             ]
         },
         resolve: {
+            alias: {
+                common: path.resolve(__dirname, 'src/common'),
+                store: path.resolve(__dirname, 'src/store'),
+                carsModule: path.resolve(__dirname, 'src/modules/cars'),
+                weatherWidgetModule: path.resolve(__dirname, 'src/modules/weatherWidget')
+            },
             extensions: [ '.js', '.jsx' ]
         },
         devServer: {
