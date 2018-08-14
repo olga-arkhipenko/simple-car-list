@@ -5,8 +5,12 @@
     ],
     "compilerOptions": {
         "baseUrl": "src",
+        "jsx": "react",
         "paths": {
-          "common/*": ["./common/*"]
+          "common/*": ["./common/*"],
+          "store/*": ["./store/*"],
+          "carsModule/*": ["./modules/cars/*"],
+          "weatherWidgetModule/*": ["./modules/weatherWidget/*"]
         }
-      }
+    }
 }
