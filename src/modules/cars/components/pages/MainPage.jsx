@@ -1,5 +1,5 @@
 import React from 'react';
-import CarsListContainer from '../../containers/CarsListContainer';
+import CarsListContainer from 'carsModule/containers/CarsListContainer';
 
 const MainPage = () => (
     <main>

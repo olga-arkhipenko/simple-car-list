@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PageLink from '../../../../common/components/PageLink';
-import Car from '../../models/car';
-import routes from '../../../../common/constants/routes';
-import { getUrlByTemplate } from '../../../../common/utilities/getUrlByTemplate';
+import PageLink from 'common/components/PageLink';
+import routes from 'common/constants/routes';
+import { getUrlByTemplate } from 'common/utilities/getUrlByTemplate';
+import Car from 'carsModule/models/car';
 import './index.css';
 
 const CarsTableRow = ({ car, onDelete }) => {

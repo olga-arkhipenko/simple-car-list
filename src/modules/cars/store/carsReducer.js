@@ -1,5 +1,5 @@
-import { zipObjects } from '../../../common/utilities/zipObjects';
-import carMapper from '../mappers/carMapper';
+import { zipObjects } from 'common/utilities/zipObjects';
+import carMapper from 'carsModule/mappers/carMapper';
 
 const ADD_CAR = 'simple-cars-list/cars/ADD_CAR';
 const EDIT_CAR = 'simple-cars-list/cars/EDIT_CAR';

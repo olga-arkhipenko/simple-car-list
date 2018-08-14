@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import CarsForm from '../components/CarsForm';
-import { carsActionCreators } from '../store/carsReducer';
-import Car from '../models/car';
+import CarsForm from 'carsModule/components/CarsForm';
+import { carsActionCreators } from 'carsModule/store/carsReducer';
+import Car from 'carsModule/models/car';
 
 const EditCarsFormContainer = ({ car, editCar }) => (
     <CarsForm
