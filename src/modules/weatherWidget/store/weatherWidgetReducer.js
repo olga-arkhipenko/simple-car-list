@@ -1,4 +1,4 @@
-import weatherWidgetService from '../services/weatherWidgetService';
+import weatherWidgetService from 'weatherWidgetModule/services/weatherWidgetService';
 
 const REQUEST_WEATHER_DATA = 'simple-cars-list/weatherWidget/REQUEST_WEATHER_DATA';
 const RECIEVE_WEATHER_DATA = 'simple-cars-list/weatherWidget/RECIEVE_WEATHER_DATA';

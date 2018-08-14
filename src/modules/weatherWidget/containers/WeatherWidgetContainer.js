@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import WeatherWidgetWrapper from '../components/WeatherWidgetWrapper';
-import WeatherData from '../models/weatherData';
-import { weatherWidgetAsyncActionCreators } from '../store/weatherWidgetReducer';
+import WeatherWidgetWrapper from 'weatherWidgetModule/components/WeatherWidgetWrapper';
+import WeatherData from 'weatherWidgetModule/models/weatherData';
+import { weatherWidgetAsyncActionCreators } from 'weatherWidgetModule/store/weatherWidgetReducer';
 
 const WeatherWidgetContainer = ({ weatherData, isFetching, fetchWeatherData }) => (
     <WeatherWidgetWrapper weatherData={ weatherData } isFetching={ isFetching } fetchWeatherData={ fetchWeatherData } />

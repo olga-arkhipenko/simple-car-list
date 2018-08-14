@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './common/components/Header';
-import AppContainer from './modules/cars/containers/AppContainer';
-import WeatherWidgetContainer from './modules/weatherWidget/containers/WeatherWidgetContainer';
+import Header from 'common/components/Header';
+import AppContainer from 'carsModule/containers/AppContainer';
+import WeatherWidgetContainer from 'weatherWidgetModule/containers/WeatherWidgetContainer';
 
 const App = () => (
     <div className="App">

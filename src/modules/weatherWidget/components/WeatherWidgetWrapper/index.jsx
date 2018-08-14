@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import WeatherWidget from '../WeatherWidget';
-import WeatherWidgetCover from '../WeatherWidgetCover';
-import WeatherData from '../../models/weatherData';
-import Spinner from '../../../../common/components/Spinner';
-import { hasPropertyValues } from '../../../../common/utilities/hasPropertyValues';
+import WeatherWidgetCover from 'weatherWidgetModule/components/WeatherWidgetCover';
+import WeatherWidget from 'weatherWidgetModule/components/WeatherWidget';
+import WeatherData from 'weatherWidgetModule/models/weatherData';
+import Spinner from 'common/components/Spinner';
+import { hasPropertyValues } from 'common/utilities/hasPropertyValues';
 import './index.css';
 
 const WeatherWidgetWrapper = ({ weatherData, isFetching, fetchWeatherData }) => (

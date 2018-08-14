@@ -1,6 +1,6 @@
-import WeatherData from '../models/weatherData';
-import { buildUrl } from '../../../common/utilities/buildUrl';
-import { IMAGE_HOST } from './constants';
+import { buildUrl } from 'common/utilities/buildUrl';
+import WeatherData from 'weatherWidgetModule/models/weatherData';
+import { IMAGE_HOST } from 'weatherWidgetModule/api/constants';
 
 const weatherDataMapper = {
     mapToWeatherData(data) {

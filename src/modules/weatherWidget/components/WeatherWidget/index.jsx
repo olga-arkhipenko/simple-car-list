@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import WeatherData from '../../models/weatherData';
-import ReloadButton from '../../../../common/components/ReloadButton';
+import WeatherData from 'weatherWidgetModule/models/weatherData';
+import ReloadButton from 'common/components/ReloadButton';
 import './index.css';
 
 const WeatherWidget = ({ weatherData, reloadWidget }) => {

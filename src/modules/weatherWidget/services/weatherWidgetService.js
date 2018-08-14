@@ -1,9 +1,9 @@
-import { getCurrentPosition } from '../../../common/utilities/getCurrentPosition';
-import { getCoords } from '../../../common/utilities/getCoords';
-import { buildUrl } from '../../../common/utilities/buildUrl';
-import weatherDataMapper from '../api/weatherDataMapper';
-import { URL, URL_PREFIX, URL_SEGMENT, API_KEY } from '../api/constants';
-import ajaxHelper from '../../../common/helpers/ajaxHelper';
+import { getCurrentPosition } from 'common/utilities/getCurrentPosition';
+import { getCoords } from 'common/utilities/getCoords';
+import { buildUrl } from 'common/utilities/buildUrl';
+import ajaxHelper from 'common/helpers/ajaxHelper';
+import weatherDataMapper from 'weatherWidgetModule/api/weatherDataMapper';
+import { URL, URL_PREFIX, URL_SEGMENT, API_KEY } from 'weatherWidgetModule/api/constants';
 
 const weatherWidgetService = {
     fetchWeatherData() {
