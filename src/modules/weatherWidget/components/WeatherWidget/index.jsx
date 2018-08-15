@@ -5,7 +5,7 @@ import WeatherData from 'weatherWidgetModule/models/weatherData';
 import ReloadButton from 'common/components/ReloadButton';
 import './index.css';
 
-const WeatherWidget = ({ weatherData, reloadWidget }) => {
+const WeatherWidget = ({ weatherData, onReload }) => {
     const className = classNames('widget', { 'widget--day': weatherData.isDay, 'widget--night': !weatherData.isDay });
     return (
         <div className={ className }>
@@ -47,14 +47,14 @@ const WeatherWidget = ({ weatherData, reloadWidget }) => {
                     { weatherData.sunriseTime }
                 </span>
             </p>
-            <ReloadButton type="widget__reload-button" onClick={ reloadWidget } />
+            <ReloadButton type="widget__reload-button" onClick={ onReload } />
         </div>
     );
 };
 
 WeatherWidget.propTypes = {
     weatherData: PropTypes.instanceOf(WeatherData),
-    reloadWidget: PropTypes.func
+    onReload: PropTypes.func
 };
 
 export default WeatherWidget;
