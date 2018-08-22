@@ -1,0 +1,12 @@
+.reload-button {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+
+    cursor: pointer;
+
+    border: none;
+    background-color: initial;
+
+    font-size: 1.8rem;
+}

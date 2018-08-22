@@ -1,0 +1,16 @@
+{
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "compilerOptions": {
+        "baseUrl": "src",
+        "jsx": "react",
+        "paths": {
+          "common/*": ["./common/*"],
+          "store/*": ["./store/*"],
+          "carsModule/*": ["./modules/cars/*"],
+          "weatherWidgetModule/*": ["./modules/weatherWidget/*"]
+        }
+    }
+}

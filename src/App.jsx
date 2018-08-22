@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
-import Router from './router';
-import Header from './components/Header';
+import React from 'react';
+import Header from 'common/components/Header';
+import AppContainer from 'carsModule/containers/AppContainer';
+import WeatherWidgetContainer from 'weatherWidgetModule/containers/WeatherWidgetContainer';
 
-class App extends Component {
-    render() {
-        return (
-            <div className="App">
-                <Header/>
-                <Router/>
-            </div>
-        );
-    }
-}
+const App = () => (
+    <div className="App">
+        <Header />
+        <AppContainer />
+        <WeatherWidgetContainer />
+    </div>
+);
 
 export default App;
