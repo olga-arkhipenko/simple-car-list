@@ -13,12 +13,6 @@ import { getPropertyOrDefault } from 'common/utilities/getPropertyOrDefault';
 import './index.css';
 
 class CarsForm extends Component {
-    static propTypes = {
-        car: PropTypes.instanceOf(Car).isRequired,
-        onSubmit: PropTypes.func.isRequired,
-        history: ReactRouterPropTypes.history.isRequired
-    }
-
     constructor(props) {
         super(props);
 
@@ -158,5 +152,11 @@ class CarsForm extends Component {
         );
     }
 }
+
+CarsForm.propTypes = {
+    car: PropTypes.instanceOf(Car).isRequired,
+    onSubmit: PropTypes.func.isRequired,
+    history: ReactRouterPropTypes.history.isRequired
+};
 
 export default withRouter(CarsForm);
