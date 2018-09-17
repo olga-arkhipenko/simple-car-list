@@ -25,7 +25,10 @@ const CarsTable = ({ cars, onDelete }) => {
 
     return (
         <div className="table-wrapper">
-            <Table tableHeading={ carsTableHeading } tableBody={ carsTableBody } />
+            <Table
+                tableHeading={ carsTableHeading }
+                tableBody={ carsTableBody }
+            />
             <PageLink
                 path={ routes.ADD_FORM }
                 type="adding-link"

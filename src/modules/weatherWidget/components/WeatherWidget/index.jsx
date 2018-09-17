@@ -18,7 +18,11 @@ const WeatherWidget = ({ weatherData, onReload }) => {
                     <p className="widget__main-property widget__main-property--description"> { weatherData.weatherDescription} </p>
                     <p className="widget__main-property widget__main-property--temperature"> { weatherData.temperature } °C </p>
                 </div>
-                <img src={ weatherData.iconUrl } alt="Weather icon." className="widget__image" />
+                <img
+                    src={ weatherData.iconUrl }
+                    alt="Weather icon."
+                    className="widget__image"
+                />
             </div>
             <p className="widget__property"> Pressure:&nbsp;
                 <span className="widget__property-value">
@@ -50,7 +54,10 @@ const WeatherWidget = ({ weatherData, onReload }) => {
                     { weatherData.sunriseTime }
                 </span>
             </p>
-            <ReloadButton type="widget__reload-button" onClick={ onReload } />
+            <ReloadButton
+                type="widget__reload-button"
+                onClick={ onReload }
+            />
         </div>
     );
 };

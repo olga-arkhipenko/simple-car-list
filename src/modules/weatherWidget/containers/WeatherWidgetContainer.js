@@ -8,7 +8,11 @@ import WeatherData from 'weatherWidgetModule/models/weatherData';
 import { weatherWidgetAsyncActionCreators } from 'weatherWidgetModule/store/weatherWidgetReducer';
 
 const WeatherWidgetContainer = ({ weatherData, isFetching, fetchWeatherData }) => (
-    <WeatherWidgetWrapper weatherData={ weatherData } isFetching={ isFetching } fetchWeatherData={ fetchWeatherData } />
+    <WeatherWidgetWrapper
+        weatherData={ weatherData }
+        isFetching={ isFetching }
+        fetchWeatherData={ fetchWeatherData }
+    />
 );
 
 WeatherWidgetContainer.propTypes = {
