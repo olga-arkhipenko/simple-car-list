@@ -43,7 +43,7 @@ module.exports = env => {
                 carsModule: path.resolve(__dirname, 'src/modules/cars'),
                 weatherWidgetModule: path.resolve(__dirname, 'src/modules/weatherWidget')
             },
-            extensions: [ '.js', 'jsx', '.json' ]
+            extensions: [ '.js', '.jsx', '.json' ]
         },
         devServer: {
             historyApiFallback: true,
