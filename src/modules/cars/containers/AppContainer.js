@@ -1,9 +1,11 @@
 import { Switch, Route } from 'react-router-dom';
 import React from 'react';
-import routes from 'common/constants/routes';
+
 import AddFormPage from 'carsModule/components/pages/AddFormPage';
 import EditFormPage from 'carsModule/components/pages/EditFormPage';
 import MainPage from 'carsModule/components/pages/MainPage';
+
+import routes from 'common/constants/routes';
 
 const AppContainer = () => (
     <Switch>

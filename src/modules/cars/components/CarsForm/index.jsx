@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ReactRouterPropTypes from 'react-router-prop-types';
 import { withRouter } from 'react-router-dom';
+
 import FormField from 'common/components/FormField';
 import FormButton from 'common/components/FormButton';
+
 import routes from 'common/constants/routes';
-import { getPropertyOrDefault } from 'common/utilities/getPropertyOrDefault';
 import Car from 'carsModule/models/car';
+import { getPropertyOrDefault } from 'common/utilities/getPropertyOrDefault';
+
 import './index.css';
 
 class CarsForm extends Component {

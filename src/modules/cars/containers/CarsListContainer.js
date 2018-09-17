@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+
 import CarsTable from 'carsModule/components/CarsTable';
+
 import Car from 'carsModule/models/car';
 import { carsActionCreators } from 'carsModule/store/carsReducer';
 

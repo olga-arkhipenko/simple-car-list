@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+
 import CarsForm from 'carsModule/components/CarsForm';
-import { carsActionCreators } from 'carsModule/store/carsReducer';
+
 import Car from 'carsModule/models/car';
+import { carsActionCreators } from 'carsModule/store/carsReducer';
 
 const AddCarsFormContainer = ({ addCar }) => (
     <CarsForm

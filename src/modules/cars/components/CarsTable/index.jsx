@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import Table from 'common/components/Table';
 import TableHeading from 'common/components/TableHeading';
 import PageLink from 'common/components/PageLink';
-import routes from 'common/constants/routes';
 import CarsTableRow from 'carsModule/components/CarsTableRow';
+
 import Car from 'carsModule/models/car';
+import routes from 'common/constants/routes';
 import tableHeadings from 'carsModule/constants/tableHeadings';
+
 import './index.css';
 
 const CarsTable = ({ cars, onDelete }) => {

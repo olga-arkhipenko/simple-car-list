@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+
 import carsReducer from 'carsModule/store/carsReducer';
 import weatherWidgetReducer from 'weatherWidgetModule/store/weatherWidgetReducer';
 

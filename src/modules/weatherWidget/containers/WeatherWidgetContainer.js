@@ -1,7 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+
 import WeatherWidgetWrapper from 'weatherWidgetModule/components/WeatherWidgetWrapper';
+
 import WeatherData from 'weatherWidgetModule/models/weatherData';
 import { weatherWidgetAsyncActionCreators } from 'weatherWidgetModule/store/weatherWidgetReducer';
 
