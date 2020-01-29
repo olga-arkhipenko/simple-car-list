@@ -1,1 +1,2 @@
-# Cars list with weather widget
+## Cars list with weather widget
+Pretty simple React app.
